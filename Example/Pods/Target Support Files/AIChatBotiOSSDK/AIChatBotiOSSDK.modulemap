@@ -1,0 +1,6 @@
+framework module AIChatBotiOSSDK {
+  umbrella header "AIChatBotiOSSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

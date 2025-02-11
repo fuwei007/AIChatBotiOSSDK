@@ -31,7 +31,7 @@
 		1F1744D846F22BFED31800D2 /* Pods-AIChatBotiOSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIChatBotiOSSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-AIChatBotiOSSDK_Example/Pods-AIChatBotiOSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2D12BCE3E8C8F27DCE7E3351 /* Pods-AIChatBotiOSSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIChatBotiOSSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AIChatBotiOSSDK_Tests/Pods-AIChatBotiOSSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		35899C4EB13AEB657520E08C /* Pods-AIChatBotiOSSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIChatBotiOSSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-AIChatBotiOSSDK_Tests/Pods-AIChatBotiOSSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		458511EEFA1047760C1707BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		458511EEFA1047760C1707BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		51949FF544210BA203F4C208 /* Pods-AIChatBotiOSSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIChatBotiOSSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-AIChatBotiOSSDK_Example/Pods-AIChatBotiOSSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5F30EF2305C72B3375343405 /* Pods_AIChatBotiOSSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIChatBotiOSSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* AIChatBotiOSSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBotiOSSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +44,9 @@
 		607FACE51AFB9204008FA782 /* AIChatBotiOSSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatBotiOSSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		62BCC38739D4F6965411D769 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		62BCC38739D4F6965411D769 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98A65AFAF9E50676EED5A992 /* Pods_AIChatBotiOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIChatBotiOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6049EFD1F409DE24A00843D /* AIChatBotiOSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AIChatBotiOSSDK.podspec; path = ../AIChatBotiOSSDK.podspec; sourceTree = "<group>"; };
+		C6049EFD1F409DE24A00843D /* AIChatBotiOSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AIChatBotiOSSDK.podspec; path = ../AIChatBotiOSSDK.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				2D12BCE3E8C8F27DCE7E3351 /* Pods-AIChatBotiOSSDK_Tests.debug.xcconfig */,
 				35899C4EB13AEB657520E08C /* Pods-AIChatBotiOSSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GGPE925FNA;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GGPE925FNA;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,10 +499,12 @@
 			baseConfigurationReference = 1F1744D846F22BFED31800D2 /* Pods-AIChatBotiOSSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GGPE925FNA;
 				INFOPLIST_FILE = AIChatBotiOSSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = company.com.chatbotAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -512,10 +516,12 @@
 			baseConfigurationReference = 51949FF544210BA203F4C208 /* Pods-AIChatBotiOSSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GGPE925FNA;
 				INFOPLIST_FILE = AIChatBotiOSSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = company.com.chatbotAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -526,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D12BCE3E8C8F27DCE7E3351 /* Pods-AIChatBotiOSSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GGPE925FNA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -535,8 +542,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = company.com.chatbotAI.test;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = company.com.chatbotAI.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -548,13 +558,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35899C4EB13AEB657520E08C /* Pods-AIChatBotiOSSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GGPE925FNA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = company.com.chatbotAI.test;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = company.com.chatbotAI.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
