@@ -18,19 +18,6 @@ class AudioVlonumCustomView: UIView {
             all_animate_view.append(animate_view)
         }
     }
-    var timer: Timer?
-    func startUpdateWave(){
-        timer = Timer(timeInterval: 0.2, target: self, selector: #selector(updateWave), userInfo: nil, repeats: true)
-        RunLoop.current.add(timer!, forMode: RunLoopMode.commonModes)
-    }
-    var number = 0
-    @objc func updateWave(){
-        let jia_array = [0.1, 0.7, 0.3, 0.9, 0.2, 0.9, 0.2, 0.5, 0.9, 1.0, 0.1, 0.7, 0.6, 0.2, 0.4, 0.1, 0.3, 0.8, 1.0, 0.0]
-        for value in all_animate_view{
-            value.updateNewPoit(newFloat: Float(jia_array[number%20]))
-        }
-        number += 1
-    }
     func updateCurrentVolumeNmber(volumeNumber: Float){
         var final_volumeNumber = volumeNumber
         if volumeNumber >= 1.0{
