@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AIChatBotiOSSDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'AIChatBotiOSSDK is a chatbot SDK for iOS applications, providing AI-driven conversation capabilities.'
 
   s.description = <<-DESC
