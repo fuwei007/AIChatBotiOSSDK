@@ -1,27 +1,35 @@
 PODS:
-  - AIChatBotiOSSDK (0.1.0)
+  - AIChatBotiOSSDK (1.0.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - IQKeyboardManagerSwift (6.5.11)
+  - Starscream (4.0.8)
 
 DEPENDENCIES:
   - AIChatBotiOSSDK (from `../`)
   - FBSnapshotTestCase (~> 2.1.4)
+  - IQKeyboardManagerSwift
+  - Starscream (~> 4.0.8)
 
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - IQKeyboardManagerSwift
+    - Starscream
 
 EXTERNAL SOURCES:
   AIChatBotiOSSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AIChatBotiOSSDK: f208e9b2d44c1cb647f155e404e58c458bfade09
+  AIChatBotiOSSDK: a490928dbd96b1337c6bf5b2a39870130f33924a
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
 
-PODFILE CHECKSUM: 4e3f8f0f66395089ddfaeae41bbd4b0762804aee
+PODFILE CHECKSUM: 5ed67315fee6ed1671bb705cd6ef6fa672a75387
 
 COCOAPODS: 1.16.2
