@@ -2,27 +2,27 @@
 import Foundation
 import UIKit
 
-class ChatVCDefaultSetManager: NSObject{
+public class ChatVCDefaultSetManager: NSObject{
     
     //MARK: 1.init
-    static let shared = ChatVCDefaultSetManager()
+    public static let shared = ChatVCDefaultSetManager()
     private override init(){
         super.init()
     }
     //MARK: 2.
-    var your_openAI_Appkey = ""
-    var backgroundColor = UIColor.black
-    var isShowLogo = false
-    var logoImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "AIChatBotiOSSDK_LOGO", ofType: "png") ?? "")
-    var userAvatarImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "chat_user_avatar", ofType: "png") ?? "")
-    var AIAvatarImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "chat_bot_avatar", ofType: "png") ?? "")
-    var isSupportAudioRealTimeChat = true
-    var isClearLocalChatMessagesData = false
-    var isClearOpenAIChatMessagesData = false
+    public var your_openAI_Appkey = ""
+    public var backgroundColor = UIColor.black
+    public var isShowLogo = false
+    public var logoImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "AIChatBotiOSSDK_LOGO", ofType: "png") ?? "")
+    public var userAvatarImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "chat_user_avatar", ofType: "png") ?? "")
+    public var AIAvatarImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "chat_bot_avatar", ofType: "png") ?? "")
+    public var isSupportAudioRealTimeChat = true
+    public var isClearLocalChatMessagesData = false
+    public var isClearOpenAIChatMessagesData = false
     
     //MARK:
     var currentChatVC: ChatViewController!
-    func showChatVC(fromVC: UIViewController){
+    public func showChatVC(fromVC: UIViewController){
         if your_openAI_Appkey.count == 0{
             let alertVC = UIAlertController(title: "Please set your openAI appkey first!", message: "", preferredStyle: .alert)
             alertVC.addAction(UIAlertAction(title: "Cancel", style: .cancel))
@@ -38,16 +38,16 @@ class ChatVCDefaultSetManager: NSObject{
     
     //MARK: 4.FunctionCall
     //4.1.
-    var all_function_array = [[String: Any]]()
-    func addFunctionCall(functionName: String, triggerKeyword: String){
+    public var all_function_array = [[String: Any]]()
+    public func addFunctionCall(functionName: String, triggerKeyword: String){
         let function_dict = ["function_Name": functionName, "triggerKeyword": triggerKeyword]
         all_function_array.append(function_dict)
     }
     //4.2.
-    var handleFunctionCallFromSDK: ((String)->())?
+    public var handleFunctionCallFromSDK: ((String)->())?
    
     //MARK: 5.
-    func getAllMessagesListData() -> [[String: Any]]{
+    public func getAllMessagesListData() -> [[String: Any]]{
         var messagesListModels = [[String: Any]]()
         if let localMessageList = UserDefaults.standard.value(forKey: "localMessageList_AIChatBotiOSSDK") as? [[String: Any]],
            localMessageList.count > 0{
@@ -55,7 +55,7 @@ class ChatVCDefaultSetManager: NSObject{
         }
         return messagesListModels
     }
-    func saveMessageWithDictData(message: [String: Any]){
+    public func saveMessageWithDictData(message: [String: Any]){
         var messagesListModels = [[String: Any]]()
         if let localMessageList = UserDefaults.standard.value(forKey: "localMessageList_AIChatBotiOSSDK") as? [[String: Any]],
            localMessageList.count > 0{
@@ -65,7 +65,7 @@ class ChatVCDefaultSetManager: NSObject{
         UserDefaults.standard.set(messagesListModels, forKey: "localMessageList_AIChatBotiOSSDK")
         UserDefaults.standard.synchronize()
     }
-    func removeMessagesInLocal(){
+    public func removeMessagesInLocal(){
         UserDefaults.standard.removeObject(forKey: "localMessageList_AIChatBotiOSSDK")
         UserDefaults.standard.synchronize()
     }
