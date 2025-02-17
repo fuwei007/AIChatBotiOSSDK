@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AIChatBotiOSSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'AIChatBotiOSSDK is a chatbot SDK for iOS applications, providing AI-driven conversation capabilities.'
 
   s.description = <<-DESC
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'AIChatBotiOSSDK' => ['AIChatBotiOSSDK/Assets/*.png']
   # }
-  s.resource = 'Assets/*.{png,jpg,jpeg}'
+  s.resource = 'AIChatBotiOSSDK/Assets/*.{png,jpg,jpeg}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
