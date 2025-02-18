@@ -1,6 +1,6 @@
 # AIChatBotiOSSDK
 
-[![CI Status](https://github.com/fuwei007/AIChatBotiOSSDK.git)]
+[![CI Status](https://img.shields.io/travis/Frank Fu/AIChatBotiOSSDK.svg?style=flat)](https://travis-ci.org/Frank Fu/AIChatBotiOSSDK)
 [![Version](https://img.shields.io/cocoapods/v/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![License](https://img.shields.io/cocoapods/l/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
@@ -74,27 +74,29 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   ```
   
   3.8.FunctionCall related:
-    (1).Add FunctionCall
-    ```ruby
-    ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToBlack", triggerKeyword: "Change the theme color to black")
-    ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToGray", triggerKeyword: "Change the theme color to gray")
-    ```
-    (2).Trigger FunctionCall
-    ```ruby
-    ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK = {function_name in
-      print("Triggered function call: \(function_name)")
+  (1).Add FunctionCall
+  ```ruby
+  ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToBlack", triggerKeyword: "Change the theme color to black")
+  ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToGray", triggerKeyword: "Change the theme color to gray")
+  ```
+  
+  (2).Trigger FunctionCall
+  ```ruby
+  ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK = {function_name in
+    print("Triggered function call: \(function_name)")
       if function_name == "ChangeChatVCBackgroudColorToBlack"{
         // Add action for black color
       }
       if function_name == "ChangeChatVCBackgroudColorToGray"{
         // Add action for gray color
       }
-    }
-    ```
+  }
+  ```
+    
   3.9.Navigate to the chat interface
-    ```ruby
-    ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)
-    ```
+  ```ruby
+  ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)
+  ```
       
 ## Author
 
