@@ -35,6 +35,8 @@
 		A9A844C62D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844BF2D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift */; };
 		A9A844C72D5C2BEC0026855D /* MaciroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844BD2D5C2BEC0026855D /* MaciroDefine.swift */; };
 		A9A844C82D5C2BEC0026855D /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844C32D5C2BEC0026855D /* WebSocketManager.swift */; };
+		A9F995092D64768D0031792E /* Audio_Chat_Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F995082D64768D0031792E /* Audio_Chat_Stop.png */; };
+		A9F9950A2D64768D0031792E /* Audio_Chat_Play.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F995072D64768D0031792E /* Audio_Chat_Play.png */; };
 		CA0968636E6BEF9174F2082B /* Pods_AIChatBotiOSSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F30EF2305C72B3375343405 /* Pods_AIChatBotiOSSDK_Tests.framework */; };
 		F2A9E4104B9A34EEBA8C55B3 /* Pods_AIChatBotiOSSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A65AFAF9E50676EED5A992 /* Pods_AIChatBotiOSSDK_Example.framework */; };
 /* End PBXBuildFile section */
@@ -245,6 +247,8 @@
 		A9A844BF2D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioCotinuouslyManager.swift; sourceTree = "<group>"; };
 		A9A844C12D5C2BEC0026855D /* RecordAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioManager.swift; sourceTree = "<group>"; };
 		A9A844C32D5C2BEC0026855D /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		A9F995072D64768D0031792E /* Audio_Chat_Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audio_Chat_Play.png; sourceTree = "<group>"; };
+		A9F995082D64768D0031792E /* Audio_Chat_Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audio_Chat_Stop.png; sourceTree = "<group>"; };
 		C6049EFD1F409DE24A00843D /* AIChatBotiOSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AIChatBotiOSSDK.podspec; path = ../AIChatBotiOSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -391,6 +395,8 @@
 		A977998B2D6314E000F8C9C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A9F995072D64768D0031792E /* Audio_Chat_Play.png */,
+				A9F995082D64768D0031792E /* Audio_Chat_Stop.png */,
 				A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */,
 				A977998D2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png */,
 				A977998E2D63157200F8C9C0 /* chat_answer_left.png */,
@@ -733,6 +739,8 @@
 				A97799972D63157200F8C9C0 /* chat_answer_left.png in Resources */,
 				A97799982D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png in Resources */,
 				A97799992D63157200F8C9C0 /* chat_user_avatar.png in Resources */,
+				A9F995092D64768D0031792E /* Audio_Chat_Stop.png in Resources */,
+				A9F9950A2D64768D0031792E /* Audio_Chat_Play.png in Resources */,
 				A977999A2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png in Resources */,
 				A977999B2D63157200F8C9C0 /* ChatViewController_micphone.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,

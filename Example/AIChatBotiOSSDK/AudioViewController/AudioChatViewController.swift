@@ -15,11 +15,20 @@ class AudioChatViewController: UIViewController {
         }
         let backButton = UIButton(type: .custom)
         backButton.frame = CGRect(x: 0, y: 44/2-18/2, width: 18, height: 18)
-        backButton.setImage(UIImage(named: "AIChatBotiOSSDK_Back", in: Bundle(for: ChatViewController.self), with: nil), for: .normal)
+        backButton.setImage(UIImage(named: "AIChatBotiOSSDK_Back", in: Bundle(for: AudioChatViewController.self), with: nil), for: .normal)
         backButton.imageView?.contentMode = .scaleAspectFit
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         view.addSubview(backButton)
         return view
+    }()
+    
+    var audioStatus = "playing"//playing paused
+    lazy var playOrPauseButton = {
+        let button = UIButton(type: .custom)
+        button.frame = CGRect(x: kScreen_WIDTH/2-48/2, y: kScreen_HEIGHT-safeBottom()-48, width: 48, height: 48)
+        button.setImage(UIImage(named: "Audio_Chat_Stop",in: Bundle(for: AudioChatViewController.self),with: nil), for: .normal)
+        button.addTarget(self, action: #selector(clickPlayOrPauseButton), for: .touchUpInside)
+        return button
     }()
     
     var volumeView: AudioVlonumCustomView!
@@ -27,11 +36,8 @@ class AudioChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
-        
-        
     }
     func initUI(){
-        
         view.backgroundColor = ChatVCDefaultSetManager.shared.backgroundColor
         navigationItem.titleView = navigationView
         
@@ -41,16 +47,36 @@ class AudioChatViewController: UIViewController {
         
         volumeView = AudioVlonumCustomView(frame: CGRect(x: UIScreen.main.bounds.size.width/2-300/2, y: UIScreen.main.bounds.size.height/2-100/2, width: 300, height: 100))
         view.addSubview(volumeView)
+        
+        view.addSubview(playOrPauseButton)
     }
     @objc func notifiAudioVolume(notify: Notification){
         if let object = notify.object as? [String: Any],
            let rmsValue = object["rmsValue"] as? Float{
             DispatchQueue.main.async {
-              self.volumeView.updateCurrentVolumeNmber(volumeNumber: rmsValue*50)
+                self.volumeView.updateCurrentVolumeNmber(volumeNumber: rmsValue*50)
             }
         }
     }
     
+    @objc func clickPlayOrPauseButton(){
+        if audioStatus == "playing"{
+            audioStatus = "paused"
+            RecordAudioManager.shared.stopCollectedAudioData()
+            PlayAudioCotinuouslyManager.shared.isPauseAudio = true
+            playOrPauseButton.setImage(UIImage(named: "Audio_Chat_Play",in: Bundle(for: AudioChatViewController.self),with: nil), for: .normal)
+            
+            volumeView.removeFromSuperview()
+        }else{
+            audioStatus = "playing"
+            RecordAudioManager.shared.startRecordAudio()
+            PlayAudioCotinuouslyManager.shared.isPauseAudio = false
+            playOrPauseButton.setImage(UIImage(named: "Audio_Chat_Stop",in: Bundle(for: AudioChatViewController.self),with: nil), for: .normal)
+            
+            volumeView = AudioVlonumCustomView(frame: CGRect(x: UIScreen.main.bounds.size.width/2-300/2, y: UIScreen.main.bounds.size.height/2-100/2, width: 300, height: 100))
+            view.addSubview(volumeView)
+        }
+    }
     //MARK:
     @objc func back(){
         NotificationCenter.default.removeObserver(self)
@@ -58,4 +84,5 @@ class AudioChatViewController: UIViewController {
         PlayAudioCotinuouslyManager.shared.isPauseAudio = true
         dismiss(animated: true)
     }
+    
 }
