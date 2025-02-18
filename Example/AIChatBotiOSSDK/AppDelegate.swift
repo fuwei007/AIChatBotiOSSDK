@@ -3,11 +3,9 @@
 //  AIChatBotiOSSDK
 //
 //  Created by Frank Fu on 02/11/2025.
-//  Copyright (c) 2025 Frank Fu. All rights reserved.
-//
 
 import UIKit
-import IQKeyboardManagerSwift
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        initIQKeyboardManagerSwift()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
@@ -31,10 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    //MARK: Third SDK---IQKeyboardManager
-    func initIQKeyboardManagerSwift(){
-        IQKeyboardManager.shared.enable = true
-    }
+    
+    
 
 }
 

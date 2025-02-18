@@ -15,7 +15,7 @@ class AudioChatViewController: UIViewController {
         }
         let backButton = UIButton(type: .custom)
         backButton.frame = CGRect(x: 0, y: 44/2-18/2, width: 18, height: 18)
-        backButton.setImage(UIImage(contentsOfFile: Bundle.main.path(forResource: "AIChatBotiOSSDK_Back", ofType: "png") ?? ""), for: .normal)
+        backButton.setImage(UIImage(named: "AIChatBotiOSSDK_Back", in: Bundle(for: ChatViewController.self), with: nil), for: .normal)
         backButton.imageView?.contentMode = .scaleAspectFit
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         view.addSubview(backButton)

@@ -96,6 +96,111 @@
 			remoteGlobalIDString = 90DF440CB562947BB255E9A3E9B29568;
 			remoteInfo = "Starscream-Starscream_Privacy";
 		};
+		A9F9949E2D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC7F0CF2EA5DF59C59D9995890DA5C47;
+			remoteInfo = IQKeyboardCore;
+		};
+		A9F994A02D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E897F35E5E27028AC58B14B552FBC8D;
+			remoteInfo = "IQKeyboardCore-IQKeyboardCore";
+		};
+		A9F994A22D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D8069D3964814114ACEC3084C010B59;
+			remoteInfo = "IQKeyboardManagerSwift-IQKeyboardManagerSwift";
+		};
+		A9F994A42D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEF9AC89E9C4BD37AC0AB78B535D1CFC;
+			remoteInfo = IQKeyboardNotification;
+		};
+		A9F994A62D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 120BD4C670EF00F4D5A40AA4B863A7AE;
+			remoteInfo = "IQKeyboardNotification-IQKeyboardNotification";
+		};
+		A9F994A82D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15848DEC7727A809830E7F6FC1B6CE0F;
+			remoteInfo = IQKeyboardReturnManager;
+		};
+		A9F994AA2D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 110BD425B6CAD6801539E2C6AB6E0662;
+			remoteInfo = "IQKeyboardReturnManager-IQKeyboardReturnManager";
+		};
+		A9F994AC2D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4B1A58096F15199A14069C5D6AA1C99;
+			remoteInfo = IQKeyboardToolbar;
+		};
+		A9F994AE2D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A16FD016E18EACCF6B23F219F2E236FE;
+			remoteInfo = "IQKeyboardToolbar-IQKeyboardToolbar";
+		};
+		A9F994B02D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA727BF5D9541C98C22C9ECC911576E2;
+			remoteInfo = IQKeyboardToolbarManager;
+		};
+		A9F994B22D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80A40EDA3AF0499BDBCFF09467BB49AD;
+			remoteInfo = "IQKeyboardToolbarManager-IQKeyboardToolbarManager";
+		};
+		A9F994B42D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06E5B413FEA5A600D76636DA132F8FB9;
+			remoteInfo = IQTextInputViewNotification;
+		};
+		A9F994B62D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F956E149F5B195BB7833F97FC6211AE8;
+			remoteInfo = "IQTextInputViewNotification-IQTextInputViewNotification";
+		};
+		A9F994B82D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DFD4541FF9DAA31A2FC2A7F6D03ED22;
+			remoteInfo = IQTextView;
+		};
+		A9F994BA2D6415FC0031792E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 847044E56CBBCE1235A6F3CEF3F9F607;
+			remoteInfo = "IQTextView-IQTextView";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -303,7 +408,22 @@
 			children = (
 				A97799C12D631DB500F8C9C0 /* AIChatBotiOSSDK.framework */,
 				A97799C32D631DB500F8C9C0 /* FBSnapshotTestCase.framework */,
+				A9F9949F2D6415FC0031792E /* IQKeyboardCore.framework */,
+				A9F994A12D6415FC0031792E /* IQKeyboardCore.bundle */,
 				A97799C52D631DB500F8C9C0 /* IQKeyboardManagerSwift.framework */,
+				A9F994A32D6415FC0031792E /* IQKeyboardManagerSwift.bundle */,
+				A9F994A52D6415FC0031792E /* IQKeyboardNotification.framework */,
+				A9F994A72D6415FC0031792E /* IQKeyboardNotification.bundle */,
+				A9F994A92D6415FC0031792E /* IQKeyboardReturnManager.framework */,
+				A9F994AB2D6415FC0031792E /* IQKeyboardReturnManager.bundle */,
+				A9F994AD2D6415FC0031792E /* IQKeyboardToolbar.framework */,
+				A9F994AF2D6415FC0031792E /* IQKeyboardToolbar.bundle */,
+				A9F994B12D6415FC0031792E /* IQKeyboardToolbarManager.framework */,
+				A9F994B32D6415FC0031792E /* IQKeyboardToolbarManager.bundle */,
+				A9F994B52D6415FC0031792E /* IQTextInputViewNotification.framework */,
+				A9F994B72D6415FC0031792E /* IQTextInputViewNotification.bundle */,
+				A9F994B92D6415FC0031792E /* IQTextView.framework */,
+				A9F994BB2D6415FC0031792E /* IQTextView.bundle */,
 				A97799C72D631DB500F8C9C0 /* Pods_AIChatBotiOSSDK_Example.framework */,
 				A97799C92D631DB500F8C9C0 /* Pods_AIChatBotiOSSDK_Tests.framework */,
 				A97799CB2D631DB500F8C9C0 /* Starscream.framework */,
@@ -495,6 +615,111 @@
 			remoteRef = A97799CC2D631DB500F8C9C0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		A9F9949F2D6415FC0031792E /* IQKeyboardCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardCore.framework;
+			remoteRef = A9F9949E2D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994A12D6415FC0031792E /* IQKeyboardCore.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQKeyboardCore.bundle;
+			remoteRef = A9F994A02D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994A32D6415FC0031792E /* IQKeyboardManagerSwift.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQKeyboardManagerSwift.bundle;
+			remoteRef = A9F994A22D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994A52D6415FC0031792E /* IQKeyboardNotification.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardNotification.framework;
+			remoteRef = A9F994A42D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994A72D6415FC0031792E /* IQKeyboardNotification.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQKeyboardNotification.bundle;
+			remoteRef = A9F994A62D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994A92D6415FC0031792E /* IQKeyboardReturnManager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardReturnManager.framework;
+			remoteRef = A9F994A82D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994AB2D6415FC0031792E /* IQKeyboardReturnManager.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQKeyboardReturnManager.bundle;
+			remoteRef = A9F994AA2D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994AD2D6415FC0031792E /* IQKeyboardToolbar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardToolbar.framework;
+			remoteRef = A9F994AC2D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994AF2D6415FC0031792E /* IQKeyboardToolbar.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQKeyboardToolbar.bundle;
+			remoteRef = A9F994AE2D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994B12D6415FC0031792E /* IQKeyboardToolbarManager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardToolbarManager.framework;
+			remoteRef = A9F994B02D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994B32D6415FC0031792E /* IQKeyboardToolbarManager.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQKeyboardToolbarManager.bundle;
+			remoteRef = A9F994B22D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994B52D6415FC0031792E /* IQTextInputViewNotification.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQTextInputViewNotification.framework;
+			remoteRef = A9F994B42D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994B72D6415FC0031792E /* IQTextInputViewNotification.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQTextInputViewNotification.bundle;
+			remoteRef = A9F994B62D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994B92D6415FC0031792E /* IQTextView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQTextView.framework;
+			remoteRef = A9F994B82D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F994BB2D6415FC0031792E /* IQTextView.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IQTextView.bundle;
+			remoteRef = A9F994BA2D6415FC0031792E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -555,13 +780,27 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AIChatBotiOSSDK_Example/Pods-AIChatBotiOSSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AIChatBotiOSSDK/AIChatBotiOSSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardCore/IQKeyboardCore.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardNotification/IQKeyboardNotification.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardReturnManager/IQKeyboardReturnManager.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardToolbar/IQKeyboardToolbar.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardToolbarManager/IQKeyboardToolbarManager.framework",
+				"${BUILT_PRODUCTS_DIR}/IQTextInputViewNotification/IQTextInputViewNotification.framework",
+				"${BUILT_PRODUCTS_DIR}/IQTextView/IQTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AIChatBotiOSSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardNotification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardReturnManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardToolbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardToolbarManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQTextInputViewNotification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         backButton.frame = CGRect(x: 0, y: 44/2-18/2, width: 18, height: 18)
         backButton.imageView?.contentMode = .scaleAspectFit
         
-        backButton.setImage(UIImage(contentsOfFile: Bundle.main.path(forResource: "AIChatBotiOSSDK_Back", ofType: "png") ?? ""), for: .normal)
+        backButton.setImage(UIImage(named: "AIChatBotiOSSDK_Back", in: Bundle(for: ChatViewController.self), with: nil), for: .normal)
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         view.addSubview(backButton)
         
@@ -43,14 +43,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let micphoneButton = UIButton(type: .custom)
         micphoneButton.frame = CGRect(x: 20, y: 64/2-30/2, width: 30, height: 30)
-        micphoneButton.setImage(UIImage(contentsOfFile: Bundle.main.path(forResource: "ChatViewController_micphone", ofType: "png") ?? ""), for: .normal)
+        
+        micphoneButton.setImage(UIImage(named: "ChatViewController_micphone", in: Bundle(for: ChatViewController.self), with: nil), for: .normal)
         micphoneButton.addTarget(self, action: #selector(changeToAudioType), for: .touchUpInside)
         view.addSubview(micphoneButton)
         micphoneButton.isHidden = !ChatVCDefaultSetManager.shared.isSupportAudioRealTimeChat
         
         let sendButton = UIButton(type: .custom)
         sendButton.frame = CGRect(x: kScreen_WIDTH-20-30, y: 64/2-30/2, width: 30, height: 30)
-        sendButton.setImage(UIImage(contentsOfFile: Bundle.main.path(forResource: "ChatViewController_sendText", ofType: "png") ?? ""), for: .normal)
+        sendButton.setImage(UIImage(named: "ChatViewController_sendText", in: Bundle(for: ChatViewController.self), with: nil), for: .normal)
         sendButton.addTarget(self, action: #selector(sendTextMessage), for: .touchUpInside)
         view.addSubview(sendButton)
         
@@ -86,8 +87,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     lazy var chatContenTableView = {()->UITableView in
         let tableView = UITableView(frame: CGRect(x: 0, y: kNavBarAndStatusBarHeight, width: kScreen_WIDTH, height: kScreen_HEIGHT-kNavBarAndStatusBarHeight-safeBottom()-64))
         tableView.backgroundColor = .clear
-        tableView.register(UINib(nibName: "ChatTableViewQuestionCell", bundle: .main), forCellReuseIdentifier: "ChatTableViewQuestionCellID")
-        tableView.register(UINib(nibName: "ChatTableViewAnswerCell", bundle: .main), forCellReuseIdentifier: "ChatTableViewAnswerCellID")
+        tableView.register(UINib(nibName: "ChatTableViewQuestionCell", bundle: Bundle(for: ChatViewController.self)), forCellReuseIdentifier: "ChatTableViewQuestionCellID")
+        tableView.register(UINib(nibName: "ChatTableViewAnswerCell", bundle: Bundle(for: ChatViewController.self)), forCellReuseIdentifier: "ChatTableViewAnswerCellID")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none

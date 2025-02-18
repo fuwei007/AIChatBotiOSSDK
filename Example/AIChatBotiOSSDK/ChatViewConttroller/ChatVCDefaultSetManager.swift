@@ -1,6 +1,7 @@
 
 import Foundation
 import UIKit
+import IQKeyboardManagerSwift
 
 public class ChatVCDefaultSetManager: NSObject{
     
@@ -8,14 +9,21 @@ public class ChatVCDefaultSetManager: NSObject{
     public static let shared = ChatVCDefaultSetManager()
     private override init(){
         super.init()
+        initIQKeyboardManagerSwift()
+    }
+    func initIQKeyboardManagerSwift(){
+        DispatchQueue.main.async {
+            IQKeyboardManager.shared.isEnabled = true
+            IQKeyboardManager.shared.enableAutoToolbar = true
+        }
     }
     //MARK: 2.
     public var your_openAI_Appkey = ""
     public var backgroundColor = UIColor.black
     public var isShowLogo = false
-    public var logoImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "AIChatBotiOSSDK_LOGO", ofType: "png") ?? "")
-    public var userAvatarImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "chat_user_avatar", ofType: "png") ?? "")
-    public var AIAvatarImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "chat_bot_avatar", ofType: "png") ?? "")
+    public var logoImage = UIImage(named: "AIChatBotiOSSDK_LOGO",in: Bundle(for: ChatVCDefaultSetManager.self), with: nil)
+    public var userAvatarImage = UIImage(named: "chat_user_avatar",in: Bundle(for: ChatVCDefaultSetManager.self), with: nil)
+    public var AIAvatarImage = UIImage(named: "chat_bot_avatar",in: Bundle(for: ChatVCDefaultSetManager.self), with: nil)
     public var isSupportAudioRealTimeChat = true
     public var isClearLocalChatMessagesData = false
     public var isClearOpenAIChatMessagesData = false
