@@ -15,7 +15,6 @@ class ChatTableViewAnswerCell: UITableViewCell {
     @IBOutlet weak var messageViewWidth: NSLayoutConstraint!
     @IBOutlet weak var messageLabel: UILabel!
     
-    
     var cellDict = [String: Any]()
     
     func initUI(){

@@ -29,7 +29,7 @@ public class ChatVCDefaultSetManager: NSObject{
     public var isClearOpenAIChatMessagesData = false
     
     //MARK:
-    var currentChatVC: ChatViewController!
+    public var currentChatVC: ChatViewController!
     public func showChatVC(fromVC: UIViewController){
         if your_openAI_Appkey.count == 0{
             let alertVC = UIAlertController(title: "Please set your openAI appkey first!", message: "", preferredStyle: .alert)

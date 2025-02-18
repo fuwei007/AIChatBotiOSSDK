@@ -1,6 +1,6 @@
 import UIKit
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate{
+public class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate{
 
     lazy var navigationView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: kStatusBarHeight, width: kScreen_WIDTH-32, height: 44))
@@ -95,7 +95,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         return tableView
     }()
     var messagesListModels = [[String: Any]]()
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
         startToConnectOpenAI()
@@ -109,7 +109,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             ChatVCDefaultSetManager.shared.removeMessagesInLocal()
         }
     }
-    func textViewDidChange(_ textView: UITextView) {
+    public func textViewDidChange(_ textView: UITextView) {
         placeholderLabel.isHidden = !textView.text.isEmpty
     }
     //MARK:
@@ -188,10 +188,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     //MARK: UITableViewDelegate, UITableViewDataSource
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messagesListModels.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let current_massage = messagesListModels[indexPath.row]
         let current_message_type = current_massage["type"] as? String ?? ""
         if current_message_type == "question"{
