@@ -1,6 +1,6 @@
 # AIChatBotiOSSDK
 
-[![CI Status](https://img.shields.io/travis/Frank Fu/AIChatBotiOSSDK.svg?style=flat)](https://travis-ci.org/Frank Fu/AIChatBotiOSSDK)
+[![CI Status](https://github.com/fuwei007/AIChatBotiOSSDK.git)]
 [![Version](https://img.shields.io/cocoapods/v/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![License](https://img.shields.io/cocoapods/l/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
@@ -36,40 +36,48 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
 ```
 
 3.Initialize parameters (optional):
+
   3.1.Page color
   ```ruby
   ChatVCDefaultSetManager.shared.backgroundColor = .black
   ```
+  
   3.2.Show logo
   ```ruby
   ChatVCDefaultSetManager.shared.isShowLogo = true
   ChatVCDefaultSetManager.shared.logoImage = UIImage(named: "***")
   ```
+  
   3.3.User avatar
   ```ruby
   ChatVCDefaultSetManager.shared.userAvatarImage = UIImage(named: "***")
   ```
+  
   3.4.AI avatar
   ```ruby
   ChatVCDefaultSetManager.shared.AIAvatarImage = UIImage(named: "***")
   ```
+  
   3.5.Support for real-time voice chat
   ```ruby
   ChatVCDefaultSetManager.shared.isSupportAudioRealTimeChat = false
   ```
+  
   3.6.Clear local chat history (clear previous chat data when entering the chat interface)
   ```ruby
   ChatVCDefaultSetManager.shared.isClearLocalChatMessagesData = true
   ```
+  
   3.7.Clear remote chat history (whether to send historical chat data to OpenAI each time connecting to the OpenAI server)
   ```ruby
   ChatVCDefaultSetManager.shared.isClearOpenAIChatMessagesData = true
   ```
+  
   3.8.FunctionCall related:
     (1).Add FunctionCall
     ```ruby
-    ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToBlack", triggerKeyword: "修改主题颜色为黑色")
-    ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToGray", triggerKeyword: "修改主题颜色为灰色")
+    ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToBlack", triggerKeyword: "Change the theme color to black")
+    ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToGray", triggerKeyword: "Change the theme color to gray")
     ```
     (2).Trigger FunctionCall
     ```ruby
