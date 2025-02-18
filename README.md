@@ -29,7 +29,7 @@ pod 'AIChatBotiOSSDK'
 ```ruby
   import AIChatBotiOSSDK
 ```
-  
+
 2.OpenAI available App Key (required):
 ```ruby
 ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
@@ -74,6 +74,7 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   ```
   
   3.8.FunctionCall related:
+  
   (1).Add FunctionCall
   ```ruby
   ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToBlack", triggerKeyword: "Change the theme color to black")
