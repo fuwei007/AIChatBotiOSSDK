@@ -28,42 +28,50 @@ class WebSocketManager: NSObject, WebSocketDelegate{
             connected_status = "connecting"
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
         }else if connected_status == "connecting"{
-            print("Connecting to OpenAI, please do not click")
+            //print("Connecting to OpenAI, please do not click")
         }else if connected_status == "connected"{
-            print("Connected to OpenAI, please do not click")
+            //print("Connected to OpenAI, please do not click")
         }
     }
     //MARK: 3.WebSocketDelegate： When webSocket received a message
     func didReceive(event: WebSocketEvent, client: WebSocketClient) {
-        print("===========================")
+        //print("===========================")
         switch event {
             case .connected(let headers):
-                print("WebSocket is connected:\(headers)")
+                //print("WebSocket is connected:\(headers)")
+                break
             case .disconnected(let reason, let code):
-                print("WebSocket disconnected: \(reason) with code: \(code)")
+                //print("WebSocket disconnected: \(reason) with code: \(code)")
                 self.connected_status = "not_connected"
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
             case .text(let text):
-                print("Received text message:")
+                //print("Received text message:")
                 handleRecivedMeaage(message_string: text)
             case .binary(let data):
-                print("Process the returned binary data (such as audio data): \(data.count)")
+                //print("Process the returned binary data (such as audio data): \(data.count)")
+                break
             case .pong(let data):
-                print("Received pong: \(String(describing: data))")
+                //print("Received pong: \(String(describing: data))")
+                break
             case .ping(let data):
-                print("Received ping: \(String(describing: data))")
+                //print("Received ping: \(String(describing: data))")
+                break
             case .error(let error):
-                print("Error: \(String(describing: error))")
+                //print("Error: \(String(describing: error))")
+                break
             case .viabilityChanged(let isViable):
-                print("WebSocket feasibility has changed: \(isViable)")
+                //print("WebSocket feasibility has changed: \(isViable)")
+                break
             case .reconnectSuggested(let isSuggested):
-                print("Reconnect suggested: \(isSuggested)")
+                //print("Reconnect suggested: \(isSuggested)")
+                break
             case .cancelled:
-                print("WebSocket was cancelled")
+                //print("WebSocket was cancelled")
+                break
             case .peerClosed:
-                print("WebSocket peer closed")
-            self.connected_status = "not_connected"
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
+                //print("WebSocket peer closed")
+                self.connected_status = "not_connected"
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
         }
     }
  
@@ -122,7 +130,7 @@ class WebSocketManager: NSObject, WebSocketDelegate{
                     //4.5.The transcribed text content of each incremental packet of audio data returned by OpenAI: divided into N packets sent sequentially to the frontend until all packets are sent.
                     if type == "response.audio_transcript.delta"{
                         if let delta = jsonObject["delta"] as? String{
-                            print("\(type)--->\(delta)")
+                            //print("\(type)--->\(delta)")
                         }
                     }
                     //4.6.This is the complete transcribed text content of a detected speech question by OpenAI (the sum of all increments).
@@ -160,7 +168,7 @@ class WebSocketManager: NSObject, WebSocketDelegate{
     
     //MARK: 5.Configure session information after creating the session
     func setupSessionParam(){
-        //5.1.初始化对话模型的配置信息
+        //5.1.Initialize the configuration information of the dialogue model
         var sessionConfig: [String: Any] = [
             "type": "session.update",
             "session": [
@@ -190,33 +198,71 @@ class WebSocketManager: NSObject, WebSocketDelegate{
         //tools
         var tools_array = [[String: Any]]()
         //all_function_array
+        //let function_dict: [String : Any] = ["functionCall_Name": functionCallName, "functionCall_Description": functionCallDescription, "functionCall_Properties": functionCallProperties]
+        /*
+        [{
+            "property_name": "color",
+            "property_type": "string",
+            "property_description": "",
+            "property_isRequired": true/false
+            
+        }]*/
+        /*
+        "color": [
+           "type": "string",
+            "description": "The color for setting background color of chat page."
+       ]*/
         for i in 0..<ChatVCDefaultSetManager.shared.all_function_array.count {
-            let function_Name = ChatVCDefaultSetManager.shared.all_function_array[i]["function_Name"] as? String ?? ""
-            let triggerKeyword = ChatVCDefaultSetManager.shared.all_function_array[i]["triggerKeyword"] as? String ?? ""
+            let functionCall_Name = ChatVCDefaultSetManager.shared.all_function_array[i]["functionCall_Name"] as? String ?? ""
+            let functionCall_Description = ChatVCDefaultSetManager.shared.all_function_array[i]["functionCall_Description"] as? String ?? ""
             var tool_dict = [String: Any]()
             tool_dict["type"] = "function"
-            tool_dict["name"] = function_Name
-            tool_dict["description"] = triggerKeyword
+            tool_dict["name"] = functionCall_Name
+            tool_dict["description"] = functionCall_Description
+            
+            var properties = [String: Any]()
+            var required = [String]()
+            if let functionCall_Properties = ChatVCDefaultSetManager.shared.all_function_array[i]["functionCall_Properties"] as? [[String: Any]]{
+                for property_value in functionCall_Properties{
+                    let property_name = property_value["property_name"] as? String ?? ""
+                    let property_type = property_value["property_type"] as? String ?? ""
+                    let property_description = property_value["property_description"] as? String ?? ""
+                    let property_isRequired = property_value["property_isRequired"] as? Bool ?? false
+                    if property_name.count > 0{
+                        properties[property_name] = [
+                            "type": property_type,
+                             "description": property_description
+                        ]
+                        if property_isRequired{
+                            required.append(property_name)
+                        }
+                    }
+                }
+            }
+            /*
             tool_dict["parameters"] = [
                 "type": "object",
                 "properties": [
-                     "date": [
+                     "color": [
                         "type": "string",
-                         "description": "The date when I write."
+                         "description": "The color for setting background color of chat page."
                     ]
                 ],
-                "required": ["date"]
+                "required": ["color"]
+            ]*/
+            tool_dict["parameters"] = [
+                "type": "object",
+                "properties": properties,
+                "required": required
             ]
             tools_array.append(tool_dict)
         }
         session_dict["tools"] = tools_array
         sessionConfig["session"] = session_dict
-        
         //5.3.
         if let jsonData = try? JSONSerialization.data(withJSONObject: sessionConfig),
            let jsonString = String(data: jsonData, encoding: .utf8){
             WebSocketManager.shared.socket.write(string: jsonString) {
-                
             }
         }
     }
@@ -287,7 +333,20 @@ class WebSocketManager: NSObject, WebSocketDelegate{
     }
     //MARK: 8. Function call
     func hanldeMessageOfFunctionAllFromChatGPT(messageObject: [String: Any]){
-        guard let function_name = messageObject["name"] as? String else{return}
-        ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK?(function_name)
+        //It is necessary to handle the parameters here.
+        var functioncall_message = messageObject
+        if let arguments_string = functioncall_message["arguments"] as? String,
+           arguments_string.count > 0{
+            if let jsonData = arguments_string.data(using: .utf8) {
+                do {
+                    if let arguments_Object = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
+                        functioncall_message["arguments"] = arguments_Object
+                    }
+                }catch{
+                    print("parse JSON error: \(error.localizedDescription)")
+                }
+            }
+        }
+        ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK?(functioncall_message)
     }
 }

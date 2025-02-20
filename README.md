@@ -73,28 +73,43 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   ChatVCDefaultSetManager.shared.isClearOpenAIChatMessagesData = true
   ```
   
-  3.8.FunctionCall related:
+4.FunctionCall related:
   
   (1).Add FunctionCall
   ```ruby
-  ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToBlack", triggerKeyword: "Change the theme color to black")
-  ChatVCDefaultSetManager.shared.addFunctionCall(functionName: "ChangeChatVCBackgroudColorToGray", triggerKeyword: "Change the theme color to gray")
+  var functionCallProperties = [[String: Any]]()
+  let functionCallProperty1: [String: Any] = [
+      "property_name": "number1",
+      "property_type": "string",
+      "property_description": "This is the first number to be added. This data must be obtained. If this parameter is missing, please ask me: What is the first number?",
+      "property_isRequired": true
+    ]
+  let functionCallProperty2: [String: Any] = [
+    "property_name": "number2",
+    "property_type": "string",
+    "property_description": "This is the second number to be added. This data must be obtained. If this parameter is missing, please ask me: What is the second number?",
+    "property_isRequired": true
+    ]
+  functionCallProperties.append(functionCallProperty1)
+  functionCallProperties.append(functionCallProperty2)
+  ChatVCDefaultSetManager.shared.addFunctionCall(functionCallName: "thisAddFunction", functionCallDescription: "Please perform addition. Both parameter numbers must be obtained. Once both numbers are retrieved, please directly return their sum.", functionCallProperties: functionCallProperties)
   ```
   
   (2).Trigger FunctionCall
   ```ruby
-  ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK = {function_name in
-    print("Triggered function call: \(function_name)")
-      if function_name == "ChangeChatVCBackgroudColorToBlack"{
-        // Add action for black color
-      }
-      if function_name == "ChangeChatVCBackgroudColorToGray"{
-        // Add action for gray color
+  ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK = {functioncall_message in
+      //print("functionCall_ReturnData:\(functioncall_message)")
+      guard let name = functioncall_message["name"] as? String else{return}
+      if name == "thisAddFunction",
+          let arguments = functioncall_message["arguments"] as? [String: Any],
+          let number1 = Float(arguments["number1"] as? String ?? ""),
+          let number2 = Float(arguments["number2"] as? String ?? ""){
+          print("\n number1=\(number1),number2=\(number2)\n result=\(number1+number2)")
       }
   }
   ```
     
-  3.9.Navigate to the chat interface
+5.Navigate to the chat interface
   ```ruby
   ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)
   ```

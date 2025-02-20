@@ -45,14 +45,13 @@ public class ChatVCDefaultSetManager: NSObject{
     }
     
     //MARK: 4.FunctionCall
-    //4.1.
     public var all_function_array = [[String: Any]]()
-    public func addFunctionCall(functionName: String, triggerKeyword: String){
-        let function_dict = ["function_Name": functionName, "triggerKeyword": triggerKeyword]
+    public func addFunctionCall(functionCallName: String, functionCallDescription: String, functionCallProperties:[[String: Any]]){
+        let function_dict: [String : Any] = ["functionCall_Name": functionCallName, "functionCall_Description": functionCallDescription, "functionCall_Properties": functionCallProperties]
         all_function_array.append(function_dict)
     }
-    //4.2.
-    public var handleFunctionCallFromSDK: ((String)->())?
+    public var handleFunctionCallFromSDK: (([String: Any])->())?
+    
    
     //MARK: 5.
     public func getAllMessagesListData() -> [[String: Any]]{
