@@ -112,30 +112,24 @@ class TestRootViewController: UIViewController {
         //3.Go To Chat page
         //3.1.This is must required param. It is the openAI Appkey.
         ChatVCDefaultSetManager.shared.your_openAI_Appkey = ""
-        //3.2.
+        //3.2.Go To Chat page
         ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)
-        
     }
     
     //Convert hexadecimal color string to UIColor
     func converHexToColor(hex: String) -> UIColor? {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
-        
         if hexSanitized.hasPrefix("#") {
             hexSanitized.remove(at: hexSanitized.startIndex)
         }
-        
         if hexSanitized.count == 6 {
             var rgb: UInt64 = 0
             Scanner(string: hexSanitized).scanHexInt64(&rgb)
-            
             let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
             let green = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
             let blue = CGFloat(rgb & 0x0000FF) / 255.0
-            
             return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
         }
-        
         return nil
     }
 }
