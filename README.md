@@ -24,6 +24,7 @@ pod 'AIChatBotiOSSDK'
   We need access to your microphone to record audio.
 
 ## Usage
+![Chat Interface Screenshot](Assets/ChatShot.png)
 
 1.Import the header file at the top of the file where the chat interface will be displayed:
 ```ruby

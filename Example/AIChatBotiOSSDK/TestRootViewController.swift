@@ -16,6 +16,7 @@ class TestRootViewController: UIViewController {
         ChatVCDefaultSetManager.shared.isClearOpenAIChatMessagesData = true
         ChatVCDefaultSetManager.shared.isClearLocalChatMessagesData = true
         
+        
         //Function Call
         //Test 1：
         /*
