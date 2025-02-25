@@ -1,10 +1,7 @@
 # AIChatBotiOSSDK
-
-[![CI Status](https://img.shields.io/travis/Frank Fu/AIChatBotiOSSDK.svg?style=flat)](https://travis-ci.org/Frank Fu/AIChatBotiOSSDK)
 [![Version](https://img.shields.io/cocoapods/v/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![License](https://img.shields.io/cocoapods/l/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
-
 
 ## Installation
 
@@ -75,6 +72,56 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   ```
   
 4.FunctionCall related:
+
+  4.1.Example 1：Change the background color of the chat interface.
+  
+  (1).Add FunctionCall
+  ```ruby
+  var functionCallProperties = [[String: Any]]()
+  let functionCallProperty1: [String: Any] = [
+    "property_name": "color",
+    "property_type": "string",
+    "property_description": "This is a required parameter, used to set the page background color. When returning the parameter, please return its hexadecimal value.",
+    "property_isRequired": true
+  ]
+  functionCallProperties.append(functionCallProperty1)
+  ChatVCDefaultSetManager.shared.addFunctionCall(functionCallName: "changeChatViewcontrollerBackgroundColor", functionCallDescription: "Change the background color of the chat interface", functionCallProperties: functionCallProperties)
+  
+  //Convert hexadecimal color string to UIColor
+  func converHexToColor(hex: String) -> UIColor? {
+    var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+    if hexSanitized.hasPrefix("#") {
+        hexSanitized.remove(at: hexSanitized.startIndex)
+    }
+    if hexSanitized.count == 6 {
+        var rgb: UInt64 = 0
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+        let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(rgb & 0x0000FF) / 255.0
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+    return nil
+  }
+  ```
+  
+  (2).Trigger FunctionCall
+  ```ruby
+  ChatVCDefaultSetManager.shared.handleFunctionCallFromSDK = {functioncall_message in
+    //print("functionCall_ReturnData:\(functioncall_message)")
+    guard let name = functioncall_message["name"] as? String else{return}
+    if name == "changeChatViewcontrollerBackgroundColor",
+    let arguments = functioncall_message["arguments"] as? [String: Any],
+    let color_hex_string = arguments["color"] as? String{
+      //Change Chat Page BackgroundColor
+      if let color = self.converHexToColor(hex: color_hex_string){
+        ChatVCDefaultSetManager.shared.currentChatVC.view.backgroundColor = color
+      }
+    }
+  }
+  ```
+  
+  4.2.Example 2: Calculate the sum of two numbers.
   
   (1).Add FunctionCall
   ```ruby
@@ -110,7 +157,7 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   }
   ```
     
-5.Navigate to the chat interface
+5.Navigate to the chat interface (required):
   ```ruby
   ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)
   ```
