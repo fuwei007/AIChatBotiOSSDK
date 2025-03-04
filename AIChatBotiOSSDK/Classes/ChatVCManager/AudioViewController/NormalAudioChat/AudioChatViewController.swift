@@ -191,7 +191,7 @@ class AudioChatViewController: UIViewController {
                 }
             }
         })
-        RunLoop.current.add(self.audioPeadkerChangeTimer!, forMode: RunLoopMode.commonModes)
+        RunLoop.current.add(self.audioPeadkerChangeTimer!, forMode: .common)
     }
     func normalize(value: Double, min: Double = -40, max: Double = 0) -> Double {
         return (value - min) / (max - min)
