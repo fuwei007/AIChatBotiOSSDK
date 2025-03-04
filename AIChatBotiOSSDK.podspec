@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
   # Declare mandatory third-party library dependencies
   s.dependency 'Starscream', '~> 4.0.8'
   s.dependency 'IQKeyboardManagerSwift', '~> 8.0.0'
-  pod 'GoogleWebRTC', '~> 1.1.32000'
+  s.dependency 'GoogleWebRTC', '~> 1.1.32000'
   
 end
