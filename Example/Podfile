@@ -3,10 +3,13 @@ use_frameworks!
 platform :ios, '15.0'
 
 target 'AIChatBotiOSSDK_Example' do
+  
   pod 'AIChatBotiOSSDK', :path => '../'
   
   pod 'Starscream' , '~> 4.0.8'
   pod 'IQKeyboardManagerSwift', '~> 8.0.0'
+  
+  pod 'GoogleWebRTC', '~> 1.1.32000'
 
   target 'AIChatBotiOSSDK_Tests' do
     inherit! :search_paths

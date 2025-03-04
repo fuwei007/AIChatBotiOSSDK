@@ -11,6 +11,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A902487C2D719816009DBAB2 /* WebRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902487B2D719816009DBAB2 /* WebRTCManager.swift */; };
 		A92C2D692D5D837E00623B9A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D682D5D837E00623B9A /* ChatViewController.swift */; };
 		A92C2D6B2D5D842800623B9A /* ChatVCDefaultSetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D6A2D5D842800623B9A /* ChatVCDefaultSetManager.swift */; };
 		A92C2D6F2D5D8C1B00623B9A /* TestRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92C2D6E2D5D8C1B00623B9A /* TestRootViewController.xib */; };
@@ -20,6 +21,10 @@
 		A92C2D772D5DC2E200623B9A /* ChatTableViewAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92C2D762D5DC2E200623B9A /* ChatTableViewAnswerCell.xib */; };
 		A92C2D782D5DC2E200623B9A /* ChatTableViewAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D752D5DC2E200623B9A /* ChatTableViewAnswerCell.swift */; };
 		A92C2D7D2D5DDE5800623B9A /* AudioChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */; };
+		A96085AD2D758B2E00FC616A /* AlertAudioChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */; };
+		A96085B32D758EEE00FC616A /* ChatBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96085B22D758EEE00FC616A /* ChatBotViewController.swift */; };
+		A96085B62D75926300FC616A /* audio_chat_goPause.png in Resources */ = {isa = PBXBuildFile; fileRef = A96085B42D75926300FC616A /* audio_chat_goPause.png */; };
+		A96085B72D75926300FC616A /* audio_chat_goPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = A96085B52D75926300FC616A /* audio_chat_goPlay.png */; };
 		A97799942D63157200F8C9C0 /* ChatViewController_sendText.png in Resources */ = {isa = PBXBuildFile; fileRef = A97799932D63157200F8C9C0 /* ChatViewController_sendText.png */; };
 		A97799952D63157200F8C9C0 /* chat_question_right.png in Resources */ = {isa = PBXBuildFile; fileRef = A97799902D63157200F8C9C0 /* chat_question_right.png */; };
 		A97799962D63157200F8C9C0 /* chat_bot_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A977998F2D63157200F8C9C0 /* chat_bot_avatar.png */; };
@@ -29,8 +34,6 @@
 		A977999A2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = A977998D2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png */; };
 		A977999B2D63157200F8C9C0 /* ChatViewController_micphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A97799922D63157200F8C9C0 /* ChatViewController_micphone.png */; };
 		A97BEC532D5F129D00A6A37B /* AudioVlonumCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97BEC522D5F129D00A6A37B /* AudioVlonumCustomView.swift */; };
-		A9A844B62D5C2AED0026855D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A844B52D5C2AED0026855D /* RootViewController.xib */; };
-		A9A844B72D5C2AED0026855D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844B42D5C2AED0026855D /* RootViewController.swift */; };
 		A9A844C52D5C2BEC0026855D /* RecordAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844C12D5C2BEC0026855D /* RecordAudioManager.swift */; };
 		A9A844C62D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844BF2D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift */; };
 		A9A844C72D5C2BEC0026855D /* MaciroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844BD2D5C2BEC0026855D /* MaciroDefine.swift */; };
@@ -222,6 +225,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62BCC38739D4F6965411D769 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98A65AFAF9E50676EED5A992 /* Pods_AIChatBotiOSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIChatBotiOSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A902487B2D719816009DBAB2 /* WebRTCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCManager.swift; sourceTree = "<group>"; };
 		A92C2D682D5D837E00623B9A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A92C2D6A2D5D842800623B9A /* ChatVCDefaultSetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVCDefaultSetManager.swift; sourceTree = "<group>"; };
 		A92C2D6D2D5D8C1B00623B9A /* TestRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRootViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +235,10 @@
 		A92C2D752D5DC2E200623B9A /* ChatTableViewAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewAnswerCell.swift; sourceTree = "<group>"; };
 		A92C2D762D5DC2E200623B9A /* ChatTableViewAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewAnswerCell.xib; sourceTree = "<group>"; };
 		A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioChatViewController.swift; sourceTree = "<group>"; };
+		A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAudioChatViewController.swift; sourceTree = "<group>"; };
+		A96085B22D758EEE00FC616A /* ChatBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotViewController.swift; sourceTree = "<group>"; };
+		A96085B42D75926300FC616A /* audio_chat_goPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_chat_goPause.png; sourceTree = "<group>"; };
+		A96085B52D75926300FC616A /* audio_chat_goPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_chat_goPlay.png; sourceTree = "<group>"; };
 		A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIChatBotiOSSDK_Back.png; sourceTree = "<group>"; };
 		A977998D2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIChatBotiOSSDK_LOGO.png; sourceTree = "<group>"; };
 		A977998E2D63157200F8C9C0 /* chat_answer_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_answer_left.png; sourceTree = "<group>"; };
@@ -241,8 +249,6 @@
 		A97799932D63157200F8C9C0 /* ChatViewController_sendText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatViewController_sendText.png; sourceTree = "<group>"; };
 		A977999C2D631C0E00F8C9C0 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		A97BEC522D5F129D00A6A37B /* AudioVlonumCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVlonumCustomView.swift; sourceTree = "<group>"; };
-		A9A844B42D5C2AED0026855D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		A9A844B52D5C2AED0026855D /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		A9A844BD2D5C2BEC0026855D /* MaciroDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaciroDefine.swift; sourceTree = "<group>"; };
 		A9A844BF2D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioCotinuouslyManager.swift; sourceTree = "<group>"; };
 		A9A844C12D5C2BEC0026855D /* RecordAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioManager.swift; sourceTree = "<group>"; };
@@ -310,14 +316,9 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				A92C2D6D2D5D8C1B00623B9A /* TestRootViewController.swift */,
 				A92C2D6E2D5D8C1B00623B9A /* TestRootViewController.xib */,
-				A977998B2D6314E000F8C9C0 /* Images */,
-				A92C2D672D5D836000623B9A /* ChatViewConttroller */,
-				A92C2D792D5DDE0C00623B9A /* AudioViewController */,
-				A92C2D6C2D5D854600623B9A /* RootViewController */,
-				A9A844C42D5C2BEC0026855D /* WebSocket */,
-				A9A844C02D5C2BEC0026855D /* PlayAudio */,
-				A9A844C22D5C2BEC0026855D /* RecordAudio */,
-				A9A844BE2D5C2BEC0026855D /* Extention */,
+				A90248572D719412009DBAB2 /* ChatVCManager */,
+				A90248552D7191CC009DBAB2 /* Model-WebSocket */,
+				A90248562D7191E3009DBAB2 /* Model-WebRTC */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -361,11 +362,49 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		A90248552D7191CC009DBAB2 /* Model-WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A977998B2D6314E000F8C9C0 /* Images */,
+				A9A844C42D5C2BEC0026855D /* WebSocket */,
+				A9A844C02D5C2BEC0026855D /* PlayAudio */,
+				A9A844C22D5C2BEC0026855D /* RecordAudio */,
+				A9A844BE2D5C2BEC0026855D /* Extention */,
+			);
+			path = "Model-WebSocket";
+			sourceTree = "<group>";
+		};
+		A90248562D7191E3009DBAB2 /* Model-WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				A90248622D71956C009DBAB2 /* WebRTCManager */,
+			);
+			path = "Model-WebRTC";
+			sourceTree = "<group>";
+		};
+		A90248572D719412009DBAB2 /* ChatVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				A92C2D6A2D5D842800623B9A /* ChatVCDefaultSetManager.swift */,
+				A92C2D672D5D836000623B9A /* ChatViewConttroller */,
+				A92C2D792D5DDE0C00623B9A /* AudioViewController */,
+			);
+			path = ChatVCManager;
+			sourceTree = "<group>";
+		};
+		A90248622D71956C009DBAB2 /* WebRTCManager */ = {
+			isa = PBXGroup;
+			children = (
+				A902487B2D719816009DBAB2 /* WebRTCManager.swift */,
+			);
+			path = WebRTCManager;
+			sourceTree = "<group>";
+		};
 		A92C2D672D5D836000623B9A /* ChatViewConttroller */ = {
 			isa = PBXGroup;
 			children = (
 				A92C2D682D5D837E00623B9A /* ChatViewController.swift */,
-				A92C2D6A2D5D842800623B9A /* ChatVCDefaultSetManager.swift */,
+				A96085B22D758EEE00FC616A /* ChatBotViewController.swift */,
 				A92C2D712D5DC2BE00623B9A /* ChatTableViewQuestionCell.swift */,
 				A92C2D722D5DC2BE00623B9A /* ChatTableViewQuestionCell.xib */,
 				A92C2D752D5DC2E200623B9A /* ChatTableViewAnswerCell.swift */,
@@ -374,27 +413,37 @@
 			path = ChatViewConttroller;
 			sourceTree = "<group>";
 		};
-		A92C2D6C2D5D854600623B9A /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A9A844B42D5C2AED0026855D /* RootViewController.swift */,
-				A9A844B52D5C2AED0026855D /* RootViewController.xib */,
-			);
-			path = RootViewController;
-			sourceTree = "<group>";
-		};
 		A92C2D792D5DDE0C00623B9A /* AudioViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */,
+				A96085AE2D758E8700FC616A /* NormalAudioChat */,
+				A96085922D758A9400FC616A /* AlertAudioChat */,
 				A97BEC522D5F129D00A6A37B /* AudioVlonumCustomView.swift */,
 			);
 			path = AudioViewController;
 			sourceTree = "<group>";
 		};
+		A96085922D758A9400FC616A /* AlertAudioChat */ = {
+			isa = PBXGroup;
+			children = (
+				A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */,
+			);
+			path = AlertAudioChat;
+			sourceTree = "<group>";
+		};
+		A96085AE2D758E8700FC616A /* NormalAudioChat */ = {
+			isa = PBXGroup;
+			children = (
+				A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */,
+			);
+			path = NormalAudioChat;
+			sourceTree = "<group>";
+		};
 		A977998B2D6314E000F8C9C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A96085B42D75926300FC616A /* audio_chat_goPause.png */,
+				A96085B52D75926300FC616A /* audio_chat_goPlay.png */,
 				A9F995072D64768D0031792E /* Audio_Chat_Play.png */,
 				A9F995082D64768D0031792E /* Audio_Chat_Stop.png */,
 				A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */,
@@ -738,6 +787,8 @@
 				A97799962D63157200F8C9C0 /* chat_bot_avatar.png in Resources */,
 				A97799972D63157200F8C9C0 /* chat_answer_left.png in Resources */,
 				A97799982D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png in Resources */,
+				A96085B62D75926300FC616A /* audio_chat_goPause.png in Resources */,
+				A96085B72D75926300FC616A /* audio_chat_goPlay.png in Resources */,
 				A97799992D63157200F8C9C0 /* chat_user_avatar.png in Resources */,
 				A9F995092D64768D0031792E /* Audio_Chat_Stop.png in Resources */,
 				A9F9950A2D64768D0031792E /* Audio_Chat_Play.png in Resources */,
@@ -748,7 +799,6 @@
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				A92C2D772D5DC2E200623B9A /* ChatTableViewAnswerCell.xib in Resources */,
 				A92C2D6F2D5D8C1B00623B9A /* TestRootViewController.xib in Resources */,
-				A9A844B62D5C2AED0026855D /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +838,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AIChatBotiOSSDK_Example/Pods-AIChatBotiOSSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AIChatBotiOSSDK/AIChatBotiOSSDK.framework",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardCore/IQKeyboardCore.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardNotification/IQKeyboardNotification.framework",
@@ -801,6 +852,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AIChatBotiOSSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardNotification.framework",
@@ -867,10 +919,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A844B72D5C2AED0026855D /* RootViewController.swift in Sources */,
+				A96085AD2D758B2E00FC616A /* AlertAudioChatViewController.swift in Sources */,
 				A92C2D7D2D5DDE5800623B9A /* AudioChatViewController.swift in Sources */,
 				A92C2D742D5DC2BE00623B9A /* ChatTableViewQuestionCell.swift in Sources */,
 				A97BEC532D5F129D00A6A37B /* AudioVlonumCustomView.swift in Sources */,
+				A902487C2D719816009DBAB2 /* WebRTCManager.swift in Sources */,
 				A9A844C52D5C2BEC0026855D /* RecordAudioManager.swift in Sources */,
 				A9A844C62D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift in Sources */,
 				A92C2D692D5D837E00623B9A /* ChatViewController.swift in Sources */,
@@ -878,6 +931,7 @@
 				A92C2D6B2D5D842800623B9A /* ChatVCDefaultSetManager.swift in Sources */,
 				A92C2D702D5D8C1B00623B9A /* TestRootViewController.swift in Sources */,
 				A9A844C82D5C2BEC0026855D /* WebSocketManager.swift in Sources */,
+				A96085B32D758EEE00FC616A /* ChatBotViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A92C2D782D5DC2E200623B9A /* ChatTableViewAnswerCell.swift in Sources */,
 			);

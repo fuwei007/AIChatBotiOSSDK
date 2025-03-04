@@ -1,12 +1,13 @@
 PODS:
-  - AIChatBotiOSSDK (1.0.4):
-    - IQKeyboardManagerSwift
+  - AIChatBotiOSSDK (1.0.12):
+    - IQKeyboardManagerSwift (~> 8.0.0)
     - Starscream (~> 4.0.8)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - GoogleWebRTC (1.1.32000)
   - IQKeyboardCore (1.0.5)
   - IQKeyboardManagerSwift (8.0.0):
     - IQKeyboardManagerSwift/Appearance (= 8.0.0)
@@ -52,12 +53,14 @@ PODS:
 DEPENDENCIES:
   - AIChatBotiOSSDK (from `../`)
   - FBSnapshotTestCase (~> 2.1.4)
+  - GoogleWebRTC (~> 1.1.32000)
   - IQKeyboardManagerSwift (~> 8.0.0)
   - Starscream (~> 4.0.8)
 
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - GoogleWebRTC
     - IQKeyboardCore
     - IQKeyboardManagerSwift
     - IQKeyboardNotification
@@ -73,8 +76,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AIChatBotiOSSDK: a980a22dc992678f10895060d861a2f2278d24bc
+  AIChatBotiOSSDK: b4b79e4c28738d08da06081a9c7517b069a4da15
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GoogleWebRTC: 4d261187b30512efdb711d21fa961a6adf138717
   IQKeyboardCore: 28c8bf3bcd8ba5aa1570b318cbc4da94b861711e
   IQKeyboardManagerSwift: 0c6fbbaa2e60739e48d7cf59f25661471a7a3a65
   IQKeyboardNotification: d7382c4466c5a5adef92c7452ebf861b36050088
@@ -85,6 +89,6 @@ SPEC CHECKSUMS:
   IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
   Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
 
-PODFILE CHECKSUM: 2ccec76696ebc6166a6c9b5b8d44645e8520434d
+PODFILE CHECKSUM: 714366f165cd6e9cee763fe707b43a93ccf9ece0
 
 COCOAPODS: 1.16.2

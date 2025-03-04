@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AIChatBotiOSSDK'
-  s.version          = '1.0.13'
+  s.version          = '1.0.14'
   s.summary          = 'AIChatBotiOSSDK is a chatbot SDK for iOS applications, providing AI-driven conversation capabilities.'
 
   s.description = <<-DESC
@@ -35,5 +35,6 @@ Pod::Spec.new do |s|
   # Declare mandatory third-party library dependencies
   s.dependency 'Starscream', '~> 4.0.8'
   s.dependency 'IQKeyboardManagerSwift', '~> 8.0.0'
+  pod 'GoogleWebRTC', '~> 1.1.32000'
   
 end

@@ -25,7 +25,7 @@ pod 'AIChatBotiOSSDK'
 
 1.Import the header file at the top of the file where the chat interface will be displayed:
 ```ruby
-  import AIChatBotiOSSDK
+import AIChatBotiOSSDK
 ```
 
 2.OpenAI available App Key (required):
@@ -69,6 +69,28 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   3.7.Clear remote chat history (whether to send historical chat data to OpenAI each time connecting to the OpenAI server)
   ```ruby
   ChatVCDefaultSetManager.shared.isClearOpenAIChatMessagesData = true
+  ```
+  
+  3.8.Modify the sound effect type of voice chat. [OpenAI Voice options](https://platform.openai.com/docs/guides/text-to-speech#voice-options)
+  ```ruby
+  ChatVCDefaultSetManager.shared.chatAudioVoiceType = "ash"
+  ```
+  
+  3.9.Set the model type for connecting to OpenAI.[OpenAI Model options](https://platform.openai.com/docs/guides/realtime#get-started-with-the-realtime-api)
+  ```ruby
+  ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel = "gpt-4o-mini-realtime-preview-2024-12-17"
+  ```
+  
+  3.10.You can fully customize the session’s configuration statement. Once you set this content, optional parameters will become invalid.
+  ```ruby
+  var sessionConfigurationStatement = [String: Any]()
+  sessionConfigurationStatement[""] = ""
+  ChatVCDefaultSetManager.shared.sessionConfigurationStatement = sessionConfigurationStatement
+  ```
+  
+  3.11.Select the technology option for real-time calls, with WebSocket mode as the default. (WebSocket/WebRTC)
+  ```ruby
+  ChatVCDefaultSetManager.shared.typeOfConnectGPT = "WebSocket"
   ```
   
 4.FunctionCall related:
@@ -115,7 +137,9 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
     let color_hex_string = arguments["color"] as? String{
       //Change Chat Page BackgroundColor
       if let color = self.converHexToColor(hex: color_hex_string){
-        ChatVCDefaultSetManager.shared.currentChatVC.view.backgroundColor = color
+        DispatchQueue.main.async {
+            ChatVCDefaultSetManager.shared.currentChatVC.view.backgroundColor = color
+        }
       }
     }
   }
@@ -161,7 +185,15 @@ ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
   ```ruby
   ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)
   ```
-      
+  
+## Specific usage video
+
+Open AI Realtime API iOS SDK | Fully open source | Swift code available on GitHub | Cocoa pod [YouTube](https://youtu.be/3HC1VeaPhRo)
+
+## Related Projects
+
+If you want to learn more about AI or chat-related projects, you can check out my other project.[OpenAIIOSRealtimeAPIDemo](https://github.com/fuwei007/OpenAIIOSRealtimeAPIDemo)
+
 ## Author
 
 Frank Fu, fuwei007@gmail.com
@@ -169,3 +201,5 @@ Frank Fu, fuwei007@gmail.com
 ## License
 
 AIChatBotiOSSDK is available under the MIT license. See the LICENSE file for more info.
+
+
