@@ -1,5 +1,5 @@
 PODS:
-  - AIChatBotiOSSDK (1.0.14):
+  - AIChatBotiOSSDK (1.0.15):
     - GoogleWebRTC (~> 1.1.32000)
     - IQKeyboardManagerSwift (~> 8.0.0)
     - Starscream (~> 4.0.8)
@@ -77,7 +77,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AIChatBotiOSSDK: ebd4929741181a5bafcbf2fc72a0f703f76c2a80
+  AIChatBotiOSSDK: 12f01b6d329a4a4062b355b26d37fbeab79a696e
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GoogleWebRTC: 4d261187b30512efdb711d21fa961a6adf138717
   IQKeyboardCore: 28c8bf3bcd8ba5aa1570b318cbc4da94b861711e
@@ -90,6 +90,6 @@ SPEC CHECKSUMS:
   IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
   Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
 
-PODFILE CHECKSUM: 714366f165cd6e9cee763fe707b43a93ccf9ece0
+PODFILE CHECKSUM: 4b09832d6ae799e79b157f4a223d549db390f49b
 
 COCOAPODS: 1.16.2

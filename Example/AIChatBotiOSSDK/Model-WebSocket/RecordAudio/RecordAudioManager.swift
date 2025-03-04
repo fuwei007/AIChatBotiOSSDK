@@ -36,7 +36,6 @@ class RecordAudioManager: NSObject, AVCaptureAudioDataOutputSampleBufferDelegate
         do {
             let audioSession = AVAudioSession.sharedInstance()
             //try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetooth])
-            //try audioSession.setCategory("playAndRecord", mode: "default", options: [.defaultToSpeaker, .allowBluetooth])
             try audioSession.setCategory("AVAudioSessionCategoryPlayAndRecord", mode: "AVAudioSessionModeDefault", options: [.defaultToSpeaker, .allowBluetooth])
             try audioSession.setActive(true)
             print("Set up AVAudioSession1 success")
