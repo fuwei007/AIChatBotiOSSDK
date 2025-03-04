@@ -319,6 +319,7 @@
 				A90248572D719412009DBAB2 /* ChatVCManager */,
 				A90248552D7191CC009DBAB2 /* Model-WebSocket */,
 				A90248562D7191E3009DBAB2 /* Model-WebRTC */,
+				A977998B2D6314E000F8C9C0 /* Resources */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -365,7 +366,6 @@
 		A90248552D7191CC009DBAB2 /* Model-WebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				A977998B2D6314E000F8C9C0 /* Images */,
 				A9A844C42D5C2BEC0026855D /* WebSocket */,
 				A9A844C02D5C2BEC0026855D /* PlayAudio */,
 				A9A844C22D5C2BEC0026855D /* RecordAudio */,
@@ -423,6 +423,25 @@
 			path = AudioViewController;
 			sourceTree = "<group>";
 		};
+		A93806692D76AB0E00AB0733 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A96085B42D75926300FC616A /* audio_chat_goPause.png */,
+				A96085B52D75926300FC616A /* audio_chat_goPlay.png */,
+				A9F995072D64768D0031792E /* Audio_Chat_Play.png */,
+				A9F995082D64768D0031792E /* Audio_Chat_Stop.png */,
+				A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */,
+				A977998D2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png */,
+				A977998E2D63157200F8C9C0 /* chat_answer_left.png */,
+				A977998F2D63157200F8C9C0 /* chat_bot_avatar.png */,
+				A97799902D63157200F8C9C0 /* chat_question_right.png */,
+				A97799912D63157200F8C9C0 /* chat_user_avatar.png */,
+				A97799922D63157200F8C9C0 /* ChatViewController_micphone.png */,
+				A97799932D63157200F8C9C0 /* ChatViewController_sendText.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		A96085922D758A9400FC616A /* AlertAudioChat */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,23 +458,12 @@
 			path = NormalAudioChat;
 			sourceTree = "<group>";
 		};
-		A977998B2D6314E000F8C9C0 /* Images */ = {
+		A977998B2D6314E000F8C9C0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A96085B42D75926300FC616A /* audio_chat_goPause.png */,
-				A96085B52D75926300FC616A /* audio_chat_goPlay.png */,
-				A9F995072D64768D0031792E /* Audio_Chat_Play.png */,
-				A9F995082D64768D0031792E /* Audio_Chat_Stop.png */,
-				A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */,
-				A977998D2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png */,
-				A977998E2D63157200F8C9C0 /* chat_answer_left.png */,
-				A977998F2D63157200F8C9C0 /* chat_bot_avatar.png */,
-				A97799902D63157200F8C9C0 /* chat_question_right.png */,
-				A97799912D63157200F8C9C0 /* chat_user_avatar.png */,
-				A97799922D63157200F8C9C0 /* ChatViewController_micphone.png */,
-				A97799932D63157200F8C9C0 /* ChatViewController_sendText.png */,
+				A93806692D76AB0E00AB0733 /* Image */,
 			);
-			path = Images;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A97799B72D631DB500F8C9C0 /* Products */ = {
