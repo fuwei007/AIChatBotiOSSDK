@@ -3,20 +3,22 @@ use_frameworks!
 platform :ios, '15.0'
 
 target 'AIChatBotiOSSDK_Example' do
-  
+
   pod 'AIChatBotiOSSDK', :path => '../'
   
   pod 'Starscream' , '~> 4.0.8'
   pod 'IQKeyboardManagerSwift', '~> 8.0.0'
   
   pod 'GoogleWebRTC', '~> 1.1.32000'
+
   post_install do |installer|
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+          # Force CocoaPods targets to always build for x86_64
+          config.build_settings['ARCHS[sdk=iphonesimulator*]'] = 'x86_64'
+        end
       end
     end
-  end
 
   target 'AIChatBotiOSSDK_Tests' do
     inherit! :search_paths

@@ -1,6 +1,6 @@
 {
   "name": "AIChatBotiOSSDK",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "summary": "AIChatBotiOSSDK is a chatbot SDK for iOS applications, providing AI-driven conversation capabilities.",
   "description": "iOSAIChatBotSDK is an AI-powered chatbot SDK designed for iOS applications.\nIt enables developers to integrate conversational AI features seamlessly into\ntheir apps, offering intelligent responses and interactions. This SDK is easy\nto integrate, supports customizable UI, and provides a robust API for developers.",
   "homepage": "https://github.com/fuwei007/AIChatBotiOSSDK.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/fuwei007/AIChatBotiOSSDK.git",
-    "tag": "1.0.15"
+    "tag": "1.0.16"
   },
   "platforms": {
     "ios": "15.0"

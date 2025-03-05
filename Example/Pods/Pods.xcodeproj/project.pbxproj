@@ -3027,9 +3027,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19FE074FDC83D82555E516F6960F37CA /* IQKeyboardToolbar.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardToolbar";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardToolbar;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbar/ResourceBundle-IQKeyboardToolbar-IQKeyboardToolbar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3047,6 +3047,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3058,7 +3059,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = "Target Support Files/Pods-AIChatBotiOSSDK_Example/Pods-AIChatBotiOSSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -3083,6 +3083,7 @@
 			baseConfigurationReference = 6404D4AF522EB31E69BFC66804EAA1A5 /* IQKeyboardReturnManager.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3094,7 +3095,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardReturnManager/IQKeyboardReturnManager-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardReturnManager/IQKeyboardReturnManager-Info.plist";
@@ -3119,9 +3119,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1767C247A91FAD99BA5D5F6802E676B1 /* IQKeyboardNotification.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardNotification";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardNotification;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardNotification/ResourceBundle-IQKeyboardNotification-IQKeyboardNotification-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3137,9 +3137,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6404D4AF522EB31E69BFC66804EAA1A5 /* IQKeyboardReturnManager.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardReturnManager";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardReturnManager;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardReturnManager/ResourceBundle-IQKeyboardReturnManager-IQKeyboardReturnManager-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3156,6 +3156,7 @@
 			baseConfigurationReference = 0D1FFD1842325AFBC85447BD6B2B91A0 /* IQKeyboardManagerSwift.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3166,7 +3167,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
@@ -3192,6 +3192,7 @@
 			baseConfigurationReference = D6A7F5FB9391F7A185FBABAAC73D5224 /* IQKeyboardManagerSwift.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3202,7 +3203,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
@@ -3229,6 +3229,7 @@
 			baseConfigurationReference = 1767C247A91FAD99BA5D5F6802E676B1 /* IQKeyboardNotification.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3240,7 +3241,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardNotification/IQKeyboardNotification-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardNotification/IQKeyboardNotification-Info.plist";
@@ -3266,6 +3266,7 @@
 			baseConfigurationReference = 26A244B6E219697F4BCDFF9CD585D9D8 /* IQKeyboardCore.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3277,7 +3278,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardCore/IQKeyboardCore-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardCore/IQKeyboardCore-Info.plist";
@@ -3302,9 +3302,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 26A244B6E219697F4BCDFF9CD585D9D8 /* IQKeyboardCore.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardCore";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardCore;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardCore/ResourceBundle-IQKeyboardCore-IQKeyboardCore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3321,11 +3321,11 @@
 			baseConfigurationReference = A9F83CFE12F648816ADEEE0675F9A96F /* GoogleWebRTC.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
@@ -3338,9 +3338,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A3CC994D56CEDB96917D14676C154A1 /* IQTextInputViewNotification.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQTextInputViewNotification";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQTextInputViewNotification;
 				INFOPLIST_FILE = "Target Support Files/IQTextInputViewNotification/ResourceBundle-IQTextInputViewNotification-IQTextInputViewNotification-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3357,6 +3357,7 @@
 			baseConfigurationReference = 3782DBC5153ED205E7C91A83F120E083 /* IQKeyboardToolbarManager.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3367,7 +3368,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardToolbarManager/IQKeyboardToolbarManager-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbarManager/IQKeyboardToolbarManager-Info.plist";
@@ -3393,6 +3393,7 @@
 			baseConfigurationReference = 3AFF612EF5D64F5B5B59EB7D31151DA5 /* AIChatBotiOSSDK.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3404,7 +3405,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/AIChatBotiOSSDK/AIChatBotiOSSDK-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/AIChatBotiOSSDK/AIChatBotiOSSDK-Info.plist";
@@ -3430,9 +3430,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3782DBC5153ED205E7C91A83F120E083 /* IQKeyboardToolbarManager.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardToolbarManager";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardToolbarManager;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbarManager/ResourceBundle-IQKeyboardToolbarManager-IQKeyboardToolbarManager-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3449,6 +3449,7 @@
 			baseConfigurationReference = 42087E60EDC60838DDA3F45BCD127EAE /* Starscream.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3460,7 +3461,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
@@ -3486,6 +3486,7 @@
 			baseConfigurationReference = 5B1F82D3A518721B90972828FC8E69A4 /* IQKeyboardCore.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3497,7 +3498,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardCore/IQKeyboardCore-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardCore/IQKeyboardCore-Info.plist";
@@ -3524,11 +3524,11 @@
 			baseConfigurationReference = 983210233F0A5D14229EFBBE3403D7F3 /* GoogleWebRTC.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
@@ -3540,9 +3540,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9A55C9F9D41B937637B0798AF0621F4 /* Starscream.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Starscream";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = Starscream;
 				INFOPLIST_FILE = "Target Support Files/Starscream/ResourceBundle-Starscream_Privacy-Starscream-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -3559,6 +3559,7 @@
 			baseConfigurationReference = 7A3CC994D56CEDB96917D14676C154A1 /* IQTextInputViewNotification.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3569,7 +3570,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQTextInputViewNotification/IQTextInputViewNotification-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQTextInputViewNotification/IQTextInputViewNotification-Info.plist";
@@ -3596,6 +3596,7 @@
 			baseConfigurationReference = 96CFDA9E16EA484DD63C638175C6B12B /* IQTextView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3606,7 +3607,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQTextView/IQTextView-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQTextView/IQTextView-Info.plist";
@@ -3632,9 +3632,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42087E60EDC60838DDA3F45BCD127EAE /* Starscream.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Starscream";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = Starscream;
 				INFOPLIST_FILE = "Target Support Files/Starscream/ResourceBundle-Starscream_Privacy-Starscream-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -3651,6 +3651,7 @@
 			baseConfigurationReference = 19FE074FDC83D82555E516F6960F37CA /* IQKeyboardToolbar.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3662,7 +3663,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardToolbar/IQKeyboardToolbar-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbar/IQKeyboardToolbar-Info.plist";
@@ -3690,6 +3690,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3701,7 +3702,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = "Target Support Files/Pods-AIChatBotiOSSDK_Tests/Pods-AIChatBotiOSSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -3725,9 +3725,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 503FD93C26FF87BDEB12AB55AE99C8A5 /* IQTextView.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQTextView";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQTextView;
 				INFOPLIST_FILE = "Target Support Files/IQTextView/ResourceBundle-IQTextView-IQTextView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3809,9 +3809,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6A7F5FB9391F7A185FBABAAC73D5224 /* IQKeyboardManagerSwift.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardManagerSwift";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardManagerSwift;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/ResourceBundle-IQKeyboardManagerSwift-IQKeyboardManagerSwift-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3828,6 +3828,7 @@
 			baseConfigurationReference = 7FFA0392354893AC576077A0DAE0ABEA /* IQKeyboardToolbarManager.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3838,7 +3839,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardToolbarManager/IQKeyboardToolbarManager-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbarManager/IQKeyboardToolbarManager-Info.plist";
@@ -3925,9 +3925,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FFA0392354893AC576077A0DAE0ABEA /* IQKeyboardToolbarManager.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardToolbarManager";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardToolbarManager;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbarManager/ResourceBundle-IQKeyboardToolbarManager-IQKeyboardToolbarManager-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3943,9 +3943,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96CFDA9E16EA484DD63C638175C6B12B /* IQTextView.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQTextView";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQTextView;
 				INFOPLIST_FILE = "Target Support Files/IQTextView/ResourceBundle-IQTextView-IQTextView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3962,6 +3962,7 @@
 			baseConfigurationReference = 503FD93C26FF87BDEB12AB55AE99C8A5 /* IQTextView.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3972,7 +3973,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQTextView/IQTextView-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQTextView/IQTextView-Info.plist";
@@ -3998,6 +3998,7 @@
 			baseConfigurationReference = BEC71B297FCAF72323CA52ADB31288F2 /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4008,7 +4009,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
@@ -4034,6 +4034,7 @@
 			baseConfigurationReference = 2CE6C6961EA4CD8D044F45607D05D641 /* IQKeyboardNotification.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4045,7 +4046,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardNotification/IQKeyboardNotification-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardNotification/IQKeyboardNotification-Info.plist";
@@ -4072,6 +4072,7 @@
 			baseConfigurationReference = 500A5076014F6E31C63A28D28F00FE65 /* AIChatBotiOSSDK.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4083,7 +4084,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/AIChatBotiOSSDK/AIChatBotiOSSDK-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/AIChatBotiOSSDK/AIChatBotiOSSDK-Info.plist";
@@ -4109,6 +4109,7 @@
 			baseConfigurationReference = FB126DE8F7E02FF50B04CD41A282CA3A /* IQKeyboardToolbar.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4120,7 +4121,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardToolbar/IQKeyboardToolbar-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbar/IQKeyboardToolbar-Info.plist";
@@ -4145,9 +4145,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33227A189C9078B2902332CD0F3E8843 /* IQTextInputViewNotification.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQTextInputViewNotification";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQTextInputViewNotification;
 				INFOPLIST_FILE = "Target Support Files/IQTextInputViewNotification/ResourceBundle-IQTextInputViewNotification-IQTextInputViewNotification-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -4164,6 +4164,7 @@
 			baseConfigurationReference = 73847933CCD63C1C054BAA29C9D0F2FC /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4174,7 +4175,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
@@ -4202,6 +4202,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4213,7 +4214,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = "Target Support Files/Pods-AIChatBotiOSSDK_Tests/Pods-AIChatBotiOSSDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -4239,6 +4239,7 @@
 			baseConfigurationReference = 5B68CECD8787B225F0C8E4BFCFCA7041 /* IQKeyboardReturnManager.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4250,7 +4251,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardReturnManager/IQKeyboardReturnManager-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardReturnManager/IQKeyboardReturnManager-Info.plist";
@@ -4276,9 +4276,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D1FFD1842325AFBC85447BD6B2B91A0 /* IQKeyboardManagerSwift.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardManagerSwift";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardManagerSwift;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/ResourceBundle-IQKeyboardManagerSwift-IQKeyboardManagerSwift-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -4294,9 +4294,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB126DE8F7E02FF50B04CD41A282CA3A /* IQKeyboardToolbar.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardToolbar";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardToolbar;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardToolbar/ResourceBundle-IQKeyboardToolbar-IQKeyboardToolbar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -4313,6 +4313,7 @@
 			baseConfigurationReference = C9A55C9F9D41B937637B0798AF0621F4 /* Starscream.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4324,7 +4325,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
@@ -4350,9 +4350,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B68CECD8787B225F0C8E4BFCFCA7041 /* IQKeyboardReturnManager.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardReturnManager";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardReturnManager;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardReturnManager/ResourceBundle-IQKeyboardReturnManager-IQKeyboardReturnManager-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -4369,6 +4369,7 @@
 			baseConfigurationReference = 33227A189C9078B2902332CD0F3E8843 /* IQTextInputViewNotification.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4379,7 +4380,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/IQTextInputViewNotification/IQTextInputViewNotification-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQTextInputViewNotification/IQTextInputViewNotification-Info.plist";
@@ -4404,9 +4404,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B1F82D3A518721B90972828FC8E69A4 /* IQKeyboardCore.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardCore";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardCore;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardCore/ResourceBundle-IQKeyboardCore-IQKeyboardCore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -4424,6 +4424,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4435,7 +4436,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = "Target Support Files/Pods-AIChatBotiOSSDK_Example/Pods-AIChatBotiOSSDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -4460,9 +4460,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CE6C6961EA4CD8D044F45607D05D641 /* IQKeyboardNotification.release.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/IQKeyboardNotification";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = IQKeyboardNotification;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardNotification/ResourceBundle-IQKeyboardNotification-IQKeyboardNotification-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
