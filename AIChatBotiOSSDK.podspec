@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AIChatBotiOSSDK'
-  s.version          = '1.0.18'
+  s.version          = '1.0.19'
   s.summary          = 'AIChatBotiOSSDK is a chatbot SDK for iOS applications, providing AI-driven conversation capabilities.'
 
   s.description = <<-DESC
@@ -41,5 +41,6 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'VALID_ARCHS' => 'x86_64'
   }
+  
   
 end

@@ -45,7 +45,6 @@
 		13C0CC60803CBD8C7711883CDF5F2A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55453D374A06AF88B3671F32024E0215 /* Foundation.framework */; };
 		149FC109BF24DAC3AED93D6AB08D9FA0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 390C19D8C594E6E7AB98E8C606DD30AF /* PrivacyInfo.xcprivacy */; };
 		14FDF4F5554C5C11DC7781EEFFCC9D5B /* UICollectionView+IndexPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D89BF0BA02037696E766DA23E796A /* UICollectionView+IndexPaths.swift */; };
-		15DF74DC30AA5678CE1B57AAD8A51865 /* audio_chat_goPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B8C546B8DEEF98B4B6F2718344601C /* audio_chat_goPause.png */; };
 		17D6FA71D67FF74959865119505A6E5E /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8BF6E8049E3CA6A77349512895D9A /* WSEngine.swift */; };
 		190ABB526CE776E6843BB72DE6C76F40 /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCBED689BF6C11EE9F03D7F9019D14 /* HTTPHandler.swift */; };
 		1B06D6FFEBB01E1308CA1A9FD0A7FD43 /* IQActiveConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79AB58E12E59719C3A3D71DD1EC58B6 /* IQActiveConfiguration.swift */; };
@@ -57,7 +56,6 @@
 		24CBEB1981CD861DE2CA1BB5B80BABF7 /* IQTextInputViewNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F956E149F5B195BB7833F97FC6211AE8 /* IQTextInputViewNotification.bundle */; };
 		24F3AC92A67807EB12D23D599642E2C7 /* IQTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2D2E0C31137EF453C2B74F9CB4FB3E /* IQTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25B0DD7A68C2CA58EA419DEB273677AE /* IQDeepResponderContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F18949A89B292CEDE19ABB8C87C5810 /* IQDeepResponderContainerView.swift */; };
-		263FA723F059820A5F4ACEA4D97BE35F /* audio_chat_goPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 221845181E206AD16160D2207CF1955B /* audio_chat_goPlay.png */; };
 		266DC97C61F361D6B1085E41D7594826 /* IQTextInputViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA9F330C6ED8221FAC6420AD9F98A /* IQTextInputViewInfo.swift */; };
 		267AEE0BF1514767DD64B50559013EB3 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C1DA233E43AB8ECA85997D11DE2187 /* FBSnapshotTestController.m */; };
 		2A26ECCEAE7B985225FDA849E160A921 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF248313972C2917A33C2A7195C0CCDF /* UIKit.framework */; };
@@ -90,7 +88,6 @@
 		49BF555630E8F7ECF2D3FB3B19B1C593 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C0816067C174B4C261D66537444D /* TCPTransport.swift */; };
 		4C6FBAA27234BCB62D5535A35F7E02B1 /* IQKeyboardReturnManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C7BAB7C36B2EAC6330F6F32CE2448C /* IQKeyboardReturnManager-dummy.m */; };
 		4CC70628699AA23648F34EA9D081A6DC /* IQKeyboardReturnManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EFE1BC6A173E562A0A614947B5617D /* IQKeyboardReturnManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D02469DAA8DD9FC4F7A008B37B79C35 /* chat_user_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4A189D9C5DFA724DBFF1BEC0DD0329 /* chat_user_avatar.png */; };
 		4D1A07C6C4EC43BB6A0F530477320004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55453D374A06AF88B3671F32024E0215 /* Foundation.framework */; };
 		4E6440E00004FF2B901C77E8F5EBD1BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55453D374A06AF88B3671F32024E0215 /* Foundation.framework */; };
 		4ED2095AD014BD283FE2B773BB6F95C0 /* IQTextInputViewNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCEBF9C38EDB39CC51C6E4F82DF4474B /* IQTextInputViewNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,7 +103,6 @@
 		5A2393671058EC7057DB4689929B5934 /* Pods-AIChatBotiOSSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF57A0FB87B0294BFE4A0CF65D1873D /* Pods-AIChatBotiOSSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B16FE4E528DAD0256E6429E6BC06841 /* IQKeyboardManager+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3D05A237F81106F8ED2A2EE0CCE7F /* IQKeyboardManager+Appearance.swift */; };
 		5B87081122421D84B6A4DDE5ADE9116E /* IQKeyboardManager+ActiveConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB2812431EF07614BD2840382C3B74 /* IQKeyboardManager+ActiveConfiguration.swift */; };
-		5CF58CF364A8DD0D5D68C95B7CA4FBB5 /* Audio_Chat_Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 65765A8C53AE7848A1BBF480403ACC6F /* Audio_Chat_Stop.png */; };
 		5F2D4B7E4F4597CBCEDE2718FD19E6F1 /* UIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE17B468BEF9C5D86814799136EC7E4 /* UIView+Hierarchy.swift */; };
 		603A0469750CAF5EB8744DE4BC1BCB56 /* IQKeyboardAppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B905F5FF270870E83CF67C8813E32 /* IQKeyboardAppearanceManager.swift */; };
 		61713657CC36120D5A4FF06FEC199D07 /* UIViewController+ParentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C05A26FCE9A4C62DD1E4CC2236CF97 /* UIViewController+ParentContainer.swift */; };
@@ -123,9 +119,6 @@
 		72468DA34056525F495FFBC7C004A618 /* IQKeyboardToolbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37347A3A65CF7F185563A702420372DF /* IQKeyboardToolbar-dummy.m */; };
 		72BEE9D5169751AB3110DA8CF667BC3B /* IQKeyboardToolbar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A16FD016E18EACCF6B23F219F2E236FE /* IQKeyboardToolbar.bundle */; };
 		736C90C71162D30DB1F2BED927FBD5F8 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 268A11970F7E22A1BA555271B5FE314E /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		737E449747CC5130541916117EB89A84 /* Audio_Chat_Play.png in Resources */ = {isa = PBXBuildFile; fileRef = D2449A287FB6C03C9E1BDF2190232B96 /* Audio_Chat_Play.png */; };
-		73BA8FBA2884B0BF09EC545DAB171AB4 /* ChatViewController_micphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8DAE0CB0007F7A6D9D8D00D6697E4C /* ChatViewController_micphone.png */; };
-		73F0F0F60EC18D3C5368328CBAEE30E6 /* AIChatBotiOSSDK_Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1504E12AF7A2B70ABD5E2376F08B676F /* AIChatBotiOSSDK_Back.png */; };
 		76085620117E839C450E794DB3773D79 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = DB07F465CFCA6835225B521E095E747F /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		766F6429966FBFF2E2E6A2991BDAFDA9 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F68ABEB541033E3FB9D6AE329896AC /* UIImage+Diff.m */; };
 		7CA66236CDA347ACA342DBCAA0F75C7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55453D374A06AF88B3671F32024E0215 /* Foundation.framework */; };
@@ -141,9 +134,7 @@
 		89110B8BD7B00A23FB442E9BB9514053 /* IQKeyboardManager+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD565F5D7BA0D4F91AEC3D8BA5A44C7 /* IQKeyboardManager+Deprecated.swift */; };
 		89C4B6C1122459EF90E46935A7F901B0 /* UIScrollView+IQKeyboardManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CB869D5816EEA405761EED9DD5DD3 /* UIScrollView+IQKeyboardManagerExtension.swift */; };
 		8FD1AB468AF7F87112C3674006F6BC6E /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D646FF4634BFB313CE14A46C7C98B /* SwiftSupport.swift */; };
-		90EEAD97B898A50636695A2B9DED0CB3 /* chat_answer_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 307A1B45D58250B7C39A46B1687A4D66 /* chat_answer_left.png */; };
 		943D09E4A07F4B1843F8F4BA3A884FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF248313972C2917A33C2A7195C0CCDF /* UIKit.framework */; };
-		94417196096908DB8B96235B829182AE /* chat_bot_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A08798D674444DC4F0863AACFD5B6B5 /* chat_bot_avatar.png */; };
 		95B56D82B6CA9896A73A1A25D790DF00 /* UIView+ParentObjc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366787BDC08051D62B892607A3D3A408 /* UIView+ParentObjc.swift */; };
 		9723D1975D2D43A2E030D0D920B0304A /* IQKeyboardResignHandler+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC871368B590732929424EA162CF9E97 /* IQKeyboardResignHandler+Internal.swift */; };
 		99703A5CC08DAC4640E90AC2E1F9BDD4 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B659E759BD1737ACFE06971FD1375 /* Engine.swift */; };
@@ -157,7 +148,6 @@
 		A32F810523D5188248FC7046966990AB /* IQTextView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 847044E56CBBCE1235A6F3CEF3F9F607 /* IQTextView.bundle */; };
 		A477BE68D635E2026E5D57EED18AFFB1 /* IQKeyboardAppearanceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC68E623DD072A15824536FB78DCCE2 /* IQKeyboardAppearanceConfiguration.swift */; };
 		A6079B5BE96D2310320100D6469E2C92 /* IQKeyboardToolbarManager+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459CFFC200857ADCB468B3AA73C3E030 /* IQKeyboardToolbarManager+Toolbar.swift */; };
-		A78F39459D0076F5692D4C46F3E82D45 /* ChatViewController_sendText.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D52D2D730AAC88D6709ADF0613C326F /* ChatViewController_sendText.png */; };
 		A941A0B87357F7FB859ED29F83939E6C /* Pods-AIChatBotiOSSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F446FEAAA8F8F71202571079F45F1 /* Pods-AIChatBotiOSSDK_Example-dummy.m */; };
 		A9F636EC57CC301224EC777295B24362 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E12225BCBF3E687F86A0AEB876F9A /* Transport.swift */; };
 		AAF664B5698D235583EFE5B5E130ED19 /* UIView+Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6E72FC837ADBB432C5426E0841B72 /* UIView+Parent.swift */; };
@@ -176,7 +166,6 @@
 		BDA3DA79ACC2DD46D1D721D994BE64BF /* IQTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FDCD322232818387C41BD5B6360E4 /* IQTextInputView.swift */; };
 		BDAEA01C139B5A356168BD6C79072F58 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88ABCEBDD2D36DEB56CC033AA179015 /* IQTextView.swift */; };
 		BE4522B2137ED8529D08404287FFBACC /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31AEFDF1DC01A03065537FB5AB45178 /* IQKeyboardManager+Internal.swift */; };
-		BECA8CEC21A668975EEA63F43420730F /* AIChatBotiOSSDK_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = E893E8AF6CB9AF74E553F5DC0D7C9573 /* AIChatBotiOSSDK_LOGO.png */; };
 		BF0114B52BC32C060749B3C138E5E569 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF248313972C2917A33C2A7195C0CCDF /* UIKit.framework */; };
 		BF4D690B9D9025C443E2B0CE2A097798 /* IQKeyboardNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C32720D68ED0AA2192FD28B15A7765 /* IQKeyboardNotification-dummy.m */; };
 		C2043E2BEBEABD22651C989D30100A73 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A4E98FE896352715E7B78FD540243 /* WebSocket.swift */; };
@@ -194,7 +183,6 @@
 		D1CD22031A3B9B18B421CA77E93C65C9 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F4E0F0518DE38B08D5402E969A2C6 /* Compression.swift */; };
 		D352EACA93C675C7699BF0093458A66F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BE52F61BA3546400A3B864B214E50184 /* PrivacyInfo.xcprivacy */; };
 		D45FBC58BDC50C62154BA76D31AE26FF /* IQKeyboardManager+ToolbarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A63B65CE0C546B2AFDF15979AF6FFA /* IQKeyboardManager+ToolbarManager.swift */; };
-		D6A3479F21F258DF93F1F88EE741E190 /* chat_question_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F05DB6875C2E683C0E4C738AF7693 /* chat_question_right.png */; };
 		DA747A80391988F1202FF4989A0E12CF /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B021192B3F982F36BF957530FD2614 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DDB30DC2CE84CFE45094B03721F29E72 /* RecordAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF826770649BA7CEA8BB9554BF82A /* RecordAudioManager.swift */; };
 		E3B6840C23DD0139FD2436D10BCE0D4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55453D374A06AF88B3671F32024E0215 /* Foundation.framework */; };
@@ -508,7 +496,6 @@
 		120BD4C670EF00F4D5A40AA4B863A7AE /* IQKeyboardNotification.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IQKeyboardNotification.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		121598F84A2930AD6BE7023636E77965 /* IQKeyboardToolbarManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardToolbarManager.swift; path = IQKeyboardToolbarManager/Classes/IQKeyboardToolbarManager.swift; sourceTree = "<group>"; };
 		144EB9218AFDB7D37FC92350C4FD5273 /* UIView+Resign.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Resign.swift"; path = "IQKeyboardManagerSwift/Resign/UIKItExtensions/UIView+Resign.swift"; sourceTree = "<group>"; };
-		1504E12AF7A2B70ABD5E2376F08B676F /* AIChatBotiOSSDK_Back.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = AIChatBotiOSSDK_Back.png; path = AIChatBotiOSSDK/Assets/AIChatBotiOSSDK_Back.png; sourceTree = "<group>"; };
 		15848DEC7727A809830E7F6FC1B6CE0F /* IQKeyboardReturnManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardReturnManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		164F4AC9FC9DB64612D159CAB83E320D /* IQKeyboardToolbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardToolbar-Info.plist"; sourceTree = "<group>"; };
 		1767C247A91FAD99BA5D5F6802E676B1 /* IQKeyboardNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardNotification.debug.xcconfig; sourceTree = "<group>"; };
@@ -518,9 +505,7 @@
 		19FE074FDC83D82555E516F6960F37CA /* IQKeyboardToolbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardToolbar.release.xcconfig; sourceTree = "<group>"; };
 		1AB96B7B427B05481F9A8A3FBC1C2671 /* IQKeyboardManager+ToolbarManagerDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+ToolbarManagerDeprecated.swift"; path = "IQKeyboardManagerSwift/IQKeyboardToolbarManager/IQKeyboardManager+ToolbarManagerDeprecated.swift"; sourceTree = "<group>"; };
 		1AF35A48E2102C46DA186D21C95FFA57 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		215F05DB6875C2E683C0E4C738AF7693 /* chat_question_right.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_question_right.png; path = AIChatBotiOSSDK/Assets/chat_question_right.png; sourceTree = "<group>"; };
 		216FF3BF0570B96AC6F11FED9303B928 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = IQKeyboardToolbar/Assets/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		221845181E206AD16160D2207CF1955B /* audio_chat_goPlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = audio_chat_goPlay.png; path = AIChatBotiOSSDK/Assets/audio_chat_goPlay.png; sourceTree = "<group>"; };
 		263887D98E8C46C4E623395135F089E5 /* UIView+IQKeyboardExtensionDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IQKeyboardExtensionDeprecated.swift"; path = "IQKeyboardToolbar/Classes/IQKeyboardExtension/UIView+IQKeyboardExtensionDeprecated.swift"; sourceTree = "<group>"; };
 		268A11970F7E22A1BA555271B5FE314E /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		26A244B6E219697F4BCDFF9CD585D9D8 /* IQKeyboardCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardCore.debug.xcconfig; sourceTree = "<group>"; };
@@ -531,7 +516,6 @@
 		2C30D0F18E3606B04D583E25EC9D5234 /* ChatTableViewAnswerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatTableViewAnswerCell.swift; sourceTree = "<group>"; };
 		2CE6C6961EA4CD8D044F45607D05D641 /* IQKeyboardNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardNotification.release.xcconfig; sourceTree = "<group>"; };
 		2FC68E623DD072A15824536FB78DCCE2 /* IQKeyboardAppearanceConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardAppearanceConfiguration.swift; path = IQKeyboardManagerSwift/Appearance/IQKeyboardAppearanceConfiguration.swift; sourceTree = "<group>"; };
-		307A1B45D58250B7C39A46B1687A4D66 /* chat_answer_left.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_answer_left.png; path = AIChatBotiOSSDK/Assets/chat_answer_left.png; sourceTree = "<group>"; };
 		31064E9F85EEE37A0A9E21620E90D934 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = IQTextInputViewNotification/Assets/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		314AECC813E0A4ECB30B3A14886400A2 /* AIChatBotiOSSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AIChatBotiOSSDK.modulemap; sourceTree = "<group>"; };
 		31BDAC827AD38EA29EDE6552010D7B00 /* ResourceBundle-IQTextInputViewNotification-IQTextInputViewNotification-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IQTextInputViewNotification-IQTextInputViewNotification-Info.plist"; sourceTree = "<group>"; };
@@ -551,7 +535,6 @@
 		3A24AA9F20ADEF71B656672EC88F7329 /* AudioChatViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioChatViewController.swift; sourceTree = "<group>"; };
 		3A8768E62BCF6E4205E6C7B5634B46E9 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		3AFF612EF5D64F5B5B59EB7D31151DA5 /* AIChatBotiOSSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AIChatBotiOSSDK.release.xcconfig; sourceTree = "<group>"; };
-		3D52D2D730AAC88D6709ADF0613C326F /* ChatViewController_sendText.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ChatViewController_sendText.png; path = AIChatBotiOSSDK/Assets/ChatViewController_sendText.png; sourceTree = "<group>"; };
 		405DC69B45BBA2D3C04363BC452971F5 /* ResourceBundle-IQKeyboardToolbarManager-IQKeyboardToolbarManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IQKeyboardToolbarManager-IQKeyboardToolbarManager-Info.plist"; sourceTree = "<group>"; };
 		4147BF1FAA502C012A060AB44DEE28A0 /* IQKeyboardToolbarManager+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardToolbarManager+Internal.swift"; path = "IQKeyboardToolbarManager/Classes/IQKeyboardToolbarManager+Internal.swift"; sourceTree = "<group>"; };
 		42087E60EDC60838DDA3F45BCD127EAE /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
@@ -584,12 +567,10 @@
 		61BCBED689BF6C11EE9F03D7F9019D14 /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
 		61ED81A5751C733D5C27D3BEB99DFD7F /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		6404D4AF522EB31E69BFC66804EAA1A5 /* IQKeyboardReturnManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardReturnManager.debug.xcconfig; sourceTree = "<group>"; };
-		65765A8C53AE7848A1BBF480403ACC6F /* Audio_Chat_Stop.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Audio_Chat_Stop.png; path = AIChatBotiOSSDK/Assets/Audio_Chat_Stop.png; sourceTree = "<group>"; };
 		6595309CEDCEAB30999C596C9C77BA2A /* IQKeyboardToolbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardToolbar.modulemap; sourceTree = "<group>"; };
 		68597662725A45C389D8A3C4AA883A00 /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
 		68662F9E8835B7C4D2A0A4DAEBC40369 /* AIChatBotiOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AIChatBotiOSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		688B20A9311EAFA314C11EC898FA0D67 /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
-		6A8DAE0CB0007F7A6D9D8D00D6697E4C /* ChatViewController_micphone.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ChatViewController_micphone.png; path = AIChatBotiOSSDK/Assets/ChatViewController_micphone.png; sourceTree = "<group>"; };
 		6B6774EAE45E656CBC236BCCD4234033 /* UIView+IQKeyboardManagerExtensionObjc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IQKeyboardManagerExtensionObjc.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager/IQKeyboardManagerExtension/UIView+IQKeyboardManagerExtensionObjc.swift"; sourceTree = "<group>"; };
 		6D8BAE2FD763F4E4170B98287208682E /* IQTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQTextView.modulemap; sourceTree = "<group>"; };
 		6DDB36F4DB552E91E3598D1D98D266D0 /* IQTextView+Placeholderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQTextView+Placeholderable.swift"; path = "IQTextView/Classes/IQTextView+Placeholderable.swift"; sourceTree = "<group>"; };
@@ -631,12 +612,10 @@
 		891AE95E7DACAFA03D0BC91433F8A4CC /* ResourceBundle-Starscream_Privacy-Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Starscream_Privacy-Starscream-Info.plist"; sourceTree = "<group>"; };
 		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D407D77C4071C58B28795462825DF9 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		8A08798D674444DC4F0863AACFD5B6B5 /* chat_bot_avatar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_bot_avatar.png; path = AIChatBotiOSSDK/Assets/chat_bot_avatar.png; sourceTree = "<group>"; };
 		8B5CEE0B30DD58D4EF4D3315474BE168 /* AlertAudioChatViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertAudioChatViewController.swift; sourceTree = "<group>"; };
 		8D8069D3964814114ACEC3084C010B59 /* IQKeyboardManagerSwift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IQKeyboardManagerSwift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E83753BAC45E4380965A5C6BF3C802B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = IQKeyboardManagerSwift/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		8ECB0BFF6EC1FBB6EFACDE2BD4F2672C /* IQPlaceholderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPlaceholderable.swift; path = IQKeyboardToolbar/Placeholderable/IQPlaceholderable.swift; sourceTree = "<group>"; };
-		90B8C546B8DEEF98B4B6F2718344601C /* audio_chat_goPause.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = audio_chat_goPause.png; path = AIChatBotiOSSDK/Assets/audio_chat_goPause.png; sourceTree = "<group>"; };
 		90DF440CB562947BB255E9A3E9B29568 /* Starscream_Privacy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Starscream_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		916C5F34259E2D310C51C087E2596766 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		9248D7BE16B4A302DB2B2958E30FE7D7 /* IQKeyboardCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardCore-prefix.pch"; sourceTree = "<group>"; };
@@ -678,7 +657,6 @@
 		B7EFE1BC6A173E562A0A614947B5617D /* IQKeyboardReturnManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardReturnManager-umbrella.h"; sourceTree = "<group>"; };
 		B82FB66B90229C9C86E01C39BC0BDEEF /* IQTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQTextView-dummy.m"; sourceTree = "<group>"; };
 		B945B3EB851E00A3870FFE2793072E81 /* Pods-AIChatBotiOSSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AIChatBotiOSSDK_Example-Info.plist"; sourceTree = "<group>"; };
-		BA4A189D9C5DFA724DBFF1BEC0DD0329 /* chat_user_avatar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_user_avatar.png; path = AIChatBotiOSSDK/Assets/chat_user_avatar.png; sourceTree = "<group>"; };
 		BADF20AF232F1CED1B71B3848B1B3D44 /* IQTextInputViewNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQTextInputViewNotification-prefix.pch"; sourceTree = "<group>"; };
 		BBCC9C35608FBF2E2DE94E5303A63F2C /* Pods_AIChatBotiOSSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIChatBotiOSSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC871368B590732929424EA162CF9E97 /* IQKeyboardResignHandler+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardResignHandler+Internal.swift"; path = "IQKeyboardManagerSwift/Resign/IQKeyboardResignHandler+Internal.swift"; sourceTree = "<group>"; };
@@ -699,7 +677,6 @@
 		D07792A9F7B023A744371A0918B9B895 /* UIView+ResignObjc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+ResignObjc.swift"; path = "IQKeyboardManagerSwift/Resign/UIKItExtensions/UIView+ResignObjc.swift"; sourceTree = "<group>"; };
 		D0CDAD9254B76E8C8E77BDCFE4E9A73D /* Pods-AIChatBotiOSSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AIChatBotiOSSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D1C32720D68ED0AA2192FD28B15A7765 /* IQKeyboardNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardNotification-dummy.m"; sourceTree = "<group>"; };
-		D2449A287FB6C03C9E1BDF2190232B96 /* Audio_Chat_Play.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Audio_Chat_Play.png; path = AIChatBotiOSSDK/Assets/Audio_Chat_Play.png; sourceTree = "<group>"; };
 		D50A8A0980605D64362C7FB7311F278D /* UIView+IQKeyboardExtensionObjc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IQKeyboardExtensionObjc.swift"; path = "IQKeyboardToolbar/Classes/IQKeyboardExtension/UIView+IQKeyboardExtensionObjc.swift"; sourceTree = "<group>"; };
 		D6A63B65CE0C546B2AFDF15979AF6FFA /* IQKeyboardManager+ToolbarManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+ToolbarManager.swift"; path = "IQKeyboardManagerSwift/IQKeyboardToolbarManager/IQKeyboardManager+ToolbarManager.swift"; sourceTree = "<group>"; };
 		D6A7F5FB9391F7A185FBABAAC73D5224 /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
@@ -722,7 +699,6 @@
 		E2C05A26FCE9A4C62DD1E4CC2236CF97 /* UIViewController+ParentContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ParentContainer.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager/UIKitExtensions/UIViewController+ParentContainer.swift"; sourceTree = "<group>"; };
 		E40B905F5FF270870E83CF67C8813E32 /* IQKeyboardAppearanceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardAppearanceManager.swift; path = IQKeyboardManagerSwift/Appearance/IQKeyboardAppearanceManager.swift; sourceTree = "<group>"; };
 		E62C2FDE7DC2D649A968BF861AD13B54 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
-		E893E8AF6CB9AF74E553F5DC0D7C9573 /* AIChatBotiOSSDK_LOGO.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = AIChatBotiOSSDK_LOGO.png; path = AIChatBotiOSSDK/Assets/AIChatBotiOSSDK_LOGO.png; sourceTree = "<group>"; };
 		EA5FBD6F570DCFFD228FCAECE9AB6AB5 /* IQKeyboardToolbarManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardToolbarManager-umbrella.h"; sourceTree = "<group>"; };
 		EBD565F5D7BA0D4F91AEC3D8BA5A44C7 /* IQKeyboardManager+Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Deprecated.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager/Deprecated/IQKeyboardManager+Deprecated.swift"; sourceTree = "<group>"; };
 		ED4B96D18BC667529B3BE329554EB619 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Sources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -1573,19 +1549,7 @@
 		B9DBEACDD3EC32E0E45BBE832A30530D /* AIChatBotiOSSDK */ = {
 			isa = PBXGroup;
 			children = (
-				1504E12AF7A2B70ABD5E2376F08B676F /* AIChatBotiOSSDK_Back.png */,
-				E893E8AF6CB9AF74E553F5DC0D7C9573 /* AIChatBotiOSSDK_LOGO.png */,
-				90B8C546B8DEEF98B4B6F2718344601C /* audio_chat_goPause.png */,
-				221845181E206AD16160D2207CF1955B /* audio_chat_goPlay.png */,
-				D2449A287FB6C03C9E1BDF2190232B96 /* Audio_Chat_Play.png */,
-				65765A8C53AE7848A1BBF480403ACC6F /* Audio_Chat_Stop.png */,
-				307A1B45D58250B7C39A46B1687A4D66 /* chat_answer_left.png */,
-				8A08798D674444DC4F0863AACFD5B6B5 /* chat_bot_avatar.png */,
-				215F05DB6875C2E683C0E4C738AF7693 /* chat_question_right.png */,
-				BA4A189D9C5DFA724DBFF1BEC0DD0329 /* chat_user_avatar.png */,
 				A04ED50AB276BE25F9D286B70802EBF2 /* ChatShot.png */,
-				6A8DAE0CB0007F7A6D9D8D00D6697E4C /* ChatViewController_micphone.png */,
-				3D52D2D730AAC88D6709ADF0613C326F /* ChatViewController_sendText.png */,
 				D9D484093C4F4A9F350D37457D921698 /* ChatVCManager */,
 				F471CF8D944DA2103F12A36D3160734C /* Model-WebRTC */,
 				0800DA01B892025E453AC9428943013D /* Model-WebSocket */,
@@ -2356,19 +2320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F0F0F60EC18D3C5368328CBAEE30E6 /* AIChatBotiOSSDK_Back.png in Resources */,
-				BECA8CEC21A668975EEA63F43420730F /* AIChatBotiOSSDK_LOGO.png in Resources */,
-				15DF74DC30AA5678CE1B57AAD8A51865 /* audio_chat_goPause.png in Resources */,
-				263FA723F059820A5F4ACEA4D97BE35F /* audio_chat_goPlay.png in Resources */,
-				737E449747CC5130541916117EB89A84 /* Audio_Chat_Play.png in Resources */,
-				5CF58CF364A8DD0D5D68C95B7CA4FBB5 /* Audio_Chat_Stop.png in Resources */,
-				90EEAD97B898A50636695A2B9DED0CB3 /* chat_answer_left.png in Resources */,
-				94417196096908DB8B96235B829182AE /* chat_bot_avatar.png in Resources */,
-				D6A3479F21F258DF93F1F88EE741E190 /* chat_question_right.png in Resources */,
-				4D02469DAA8DD9FC4F7A008B37B79C35 /* chat_user_avatar.png in Resources */,
 				13054EC273FA6C158E6FFA21AD3B861D /* ChatShot.png in Resources */,
-				73BA8FBA2884B0BF09EC545DAB171AB4 /* ChatViewController_micphone.png in Resources */,
-				A78F39459D0076F5692D4C46F3E82D45 /* ChatViewController_sendText.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
