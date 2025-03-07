@@ -3,6 +3,18 @@
 [![License](https://img.shields.io/cocoapods/l/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 [![Platform](https://img.shields.io/cocoapods/p/AIChatBotiOSSDK.svg?style=flat)](https://cocoapods.org/pods/AIChatBotiOSSDK)
 
+## Xcode configuration
+
+1.Creating a Swift Project
+
+2.Minimum project version: 15.0
+
+3.Add privacy permission requests in Target –> Info:
+
+  Privacy - Microphone Usage Description
+  
+  We need access to your microphone to record audio.
+
 ## Installation
 
 AIChatBotiOSSDK is available through [CocoaPods](https://cocoapods.org). To install
@@ -11,14 +23,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'AIChatBotiOSSDK'
 ```
-
-## Xcode configuration
-
-1.Minimum project version: 15.0
-
-2.Add privacy permission requests in Target –> Info:
-  Privacy - Microphone Usage Description
-  We need access to your microphone to record audio.
 
 ## Usage
 ![Chat Interface Screenshot](AIChatBotiOSSDK/Assets/ChatShot.png)
