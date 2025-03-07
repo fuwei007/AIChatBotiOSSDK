@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AIChatBotiOSSDK'
-  s.version          = '1.0.19'
+  s.version          = '1.0.20'
   s.summary          = 'AIChatBotiOSSDK is a chatbot SDK for iOS applications, providing AI-driven conversation capabilities.'
 
   s.description = <<-DESC
@@ -33,14 +33,22 @@ Pod::Spec.new do |s|
   s.dependency 'GoogleWebRTC', '~> 1.1.32000'
   
   #WebRTC can only run on the simulator using the x86_64 architecture. The following method can enforce Xcode to compile using x86_64 only.
+  #s.pod_target_xcconfig = {
+  #    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  #    'VALID_ARCHS' => 'x86_64'
+  #}
+  #s.user_target_xcconfig = {
+  #    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  #    'VALID_ARCHS' => 'x86_64'
+  #}
   s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'VALID_ARCHS' => 'x86_64'
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
   }
   s.user_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'VALID_ARCHS' => 'x86_64'
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+      'VALID_ARCHS' => 'x86_64'
   }
+  
   
   
 end
