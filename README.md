@@ -34,9 +34,17 @@ import AIChatBotiOSSDK
 
 2.OpenAI available App Key (required):
 ```ruby
-ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
+//At least one of the two parameters must be set:
+//ChatVCDefaultSetManager.shared.your_openAI_Appkey = "*******"
+//ChatVCDefaultSetManager.shared.your_openAI_AccessToken = "*******"
 ```
-
+ OpenAI Authentication Process: OpenAIKey → API Call → Obtain AccessToken
+  
+  2.1.If you set OpenAIKey, the SDK will automatically complete the OpenAI authentication process.
+  
+  2.2.Alternatively, you can set AccessToken. For example, you can create your own API to handle the authentication process on the server, avoiding the risk of exposing OpenAIKey in frontend code.
+    
+    
 3.Initialize parameters (optional):
 
   3.1.Page color

@@ -235,50 +235,117 @@ class WebRTCManager: NSObject, RTCPeerConnectionDelegate, RTCDataChannelDelegate
                 }
                 self.localPeerConnection.setLocalDescription(sessionLocalDescription) { error2 in
                     if error2 != nil{
+                        self.connect_statuse = "not connect"
                         DispatchQueue.main.async {
-                            self.connect_statuse = "not connect"
-                            DispatchQueue.main.async {
-                                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
-                            }
+                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
                         }
                     }else{
-                        var request = URLRequest(url: URL(string: "https://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
-                        request.httpMethod = "POST"
-                        request.addValue("application/sdp", forHTTPHeaderField: "Content-Type")
-                        let openai_key = ChatVCDefaultSetManager.shared.your_openAI_Appkey
-                        request.addValue("Bearer \(openai_key)", forHTTPHeaderField: "Authorization")
-                        request.httpBody = sessionLocalDescription.sdp.data(using: .utf8)
-                        URLSession.shared.dataTask(with: request, completionHandler: { resultData, response, error3 in
-                            guard let data = resultData,
-                                error3 == nil else {
-                                print("error:", error3 ?? "Unknown error")
-                                DispatchQueue.main.async {
+                        if ChatVCDefaultSetManager.shared.your_openAI_AccessToken.count > 0{
+                            var request = URLRequest(url: URL(string: "https://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
+                            request.httpMethod = "POST"
+                            request.addValue("application/sdp", forHTTPHeaderField: "Content-Type")
+                            request.addValue("Bearer \(ChatVCDefaultSetManager.shared.your_openAI_AccessToken)", forHTTPHeaderField: "Authorization")
+                            request.httpBody = sessionLocalDescription.sdp.data(using: .utf8)
+                            URLSession.shared.dataTask(with: request, completionHandler: { resultData, response, error3 in
+                                guard let data = resultData,
+                                    error3 == nil else {
+                                    print("error:", error3 ?? "Unknown error")
+                                    self.connect_statuse = "not connect"
+                                    DispatchQueue.main.async {
+                                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                    }
+                                    return
+                                }
+                                if let server_sdp_string = String(data: data, encoding: .utf8) {
+                                    let remote_sessionDescription = RTCSessionDescription(type: .answer, sdp: server_sdp_string)
+                                    self.localPeerConnection.setRemoteDescription(remote_sessionDescription) { error4 in
+                                        if error4 != nil{
+                                            self.connect_statuse = "not connect"
+                                            DispatchQueue.main.async {
+                                                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                            }
+                                        }else{}
+                                    }
+                                } else {
                                     self.connect_statuse = "not connect"
                                     DispatchQueue.main.async {
                                         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
                                     }
                                 }
+                            }).resume()
+                        }else{
+                            //Get AccessToken
+                            var request1 = URLRequest(url: URL(string: "https://api.openai.com/v1/realtime/sessions")!)
+                            request1.httpMethod = "POST"
+                            request1.addValue("Bearer \(ChatVCDefaultSetManager.shared.your_openAI_Appkey)", forHTTPHeaderField: "Authorization")
+                            request1.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                            var body1 = [String: Any]()
+                            body1["model"] = ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel
+                            body1["voice"] = ChatVCDefaultSetManager.shared.chatAudioVoiceType
+                            guard let jsonData1 = try? JSONSerialization.data(withJSONObject: body1, options: []) else{
+                                self.connect_statuse = "not connect"
+                                DispatchQueue.main.async {
+                                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                }
                                 return
                             }
-                            if let server_sdp_string = String(data: data, encoding: .utf8) {
-                                let remote_sessionDescription = RTCSessionDescription(type: .answer, sdp: server_sdp_string)
-                                self.localPeerConnection.setRemoteDescription(remote_sessionDescription) { error4 in
-                                    if error4 != nil{
-                                        DispatchQueue.main.async {
+                            request1.httpBody = jsonData1
+                            URLSession.shared.dataTask(with: request1) { data, response, error in
+                                guard let recievedData = data else{
+                                    self.connect_statuse = "not connect"
+                                    DispatchQueue.main.async {
+                                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                    }
+                                    return
+                                }
+                                guard let recievedData_string = String(data: recievedData, encoding: .utf8) else{
+                                    self.connect_statuse = "not connect"
+                                    DispatchQueue.main.async {
+                                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                    }
+                                    return
+                                }
+                                //print("Get AccessToken Result: \(recievedData_string)")
+                                if let jsonObject = (try? JSONSerialization.jsonObject(with: recievedData_string.data(using: .utf8) ?? Data())) as? [String: Any],
+                                   let client_secret = jsonObject["client_secret"] as? [String: Any],
+                                   let client_secret_value = client_secret["value"] as? String{
+                                     //Connect WebSockt with Access Token
+                                    //print("Connect OpenAI With AccessToken: \(client_secret_value)")
+                                    var request = URLRequest(url: URL(string: "https://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
+                                    request.httpMethod = "POST"
+                                    request.addValue("application/sdp", forHTTPHeaderField: "Content-Type")
+                                    request.addValue("Bearer \(client_secret_value)", forHTTPHeaderField: "Authorization")
+                                    request.httpBody = sessionLocalDescription.sdp.data(using: .utf8)
+                                    URLSession.shared.dataTask(with: request, completionHandler: { resultData, response, error3 in
+                                        guard let data = resultData,
+                                            error3 == nil else {
+                                            print("error:", error3 ?? "Unknown error")
+                                            self.connect_statuse = "not connect"
+                                            DispatchQueue.main.async {
+                                                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                            }
+                                            return
+                                        }
+                                        if let server_sdp_string = String(data: data, encoding: .utf8) {
+                                            let remote_sessionDescription = RTCSessionDescription(type: .answer, sdp: server_sdp_string)
+                                            self.localPeerConnection.setRemoteDescription(remote_sessionDescription) { error4 in
+                                                if error4 != nil{
+                                                    self.connect_statuse = "not connect"
+                                                    DispatchQueue.main.async {
+                                                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
+                                                    }
+                                                }else{}
+                                            }
+                                        } else {
                                             self.connect_statuse = "not connect"
                                             DispatchQueue.main.async {
                                                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
                                             }
                                         }
-                                    }else{}
+                                    }).resume()
                                 }
-                            } else {
-                                self.connect_statuse = "not connect"
-                                DispatchQueue.main.async {
-                                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebRTC_changeWebRTCConnectStatus"), object: nil)
-                                }
-                            }
-                        }).resume()
+                            }.resume()
+                        }
                     }
                 }
             }

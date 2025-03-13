@@ -155,10 +155,12 @@ class TestRootViewController: UIViewController {
         //4.Go To Chat page
         //4.1.This is must required param. It is the openAI Appkey.
         ChatVCDefaultSetManager.shared.your_openAI_Appkey = ""
+        //ChatVCDefaultSetManager.shared.your_openAI_AccessToken = ""
+        
         
         //4.2.You can choose the type Of GPT method.
-        //ChatVCDefaultSetManager.shared.typeOfConnectGPT = "WebSocket" //Default
-        ChatVCDefaultSetManager.shared.typeOfConnectGPT = "WebRTC"
+        ChatVCDefaultSetManager.shared.typeOfConnectGPT = "WebSocket" //Default
+        //ChatVCDefaultSetManager.shared.typeOfConnectGPT = "WebRTC"
         
         //4.3.Go To Chat page
         ChatVCDefaultSetManager.shared.showChatVC(fromVC: self)

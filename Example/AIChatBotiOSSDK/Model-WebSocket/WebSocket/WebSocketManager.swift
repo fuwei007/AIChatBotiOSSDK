@@ -18,15 +18,48 @@ class WebSocketManager: NSObject, WebSocketDelegate{
     //MARK: 2.Connect OpenAi WebSocket
     func connectWebSocketOfOpenAi(){
         if connected_status == "not_connected"{
-            var request = URLRequest(url: URL(string: "wss://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
-            request.addValue("Bearer \(ChatVCDefaultSetManager.shared.your_openAI_Appkey)", forHTTPHeaderField: "Authorization")
-            request.addValue("realtime=v1", forHTTPHeaderField: "OpenAI-Beta")
-        
-            socket = WebSocket(request: request)
-            socket.delegate = self
-            socket.connect()
-            connected_status = "connecting"
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
+            if ChatVCDefaultSetManager.shared.your_openAI_AccessToken.count > 0{
+                var request = URLRequest(url: URL(string: "wss://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
+                request.addValue("Bearer \(ChatVCDefaultSetManager.shared.your_openAI_AccessToken)", forHTTPHeaderField: "Authorization")
+                request.addValue("realtime=v1", forHTTPHeaderField: "OpenAI-Beta")
+                socket = WebSocket(request: request)
+                socket.delegate = self
+                socket.connect()
+                connected_status = "connecting"
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
+            }else{
+                //Get AccessToken
+                var request1 = URLRequest(url: URL(string: "https://api.openai.com/v1/realtime/sessions")!)
+                request1.httpMethod = "POST"
+                request1.addValue("Bearer \(ChatVCDefaultSetManager.shared.your_openAI_Appkey)", forHTTPHeaderField: "Authorization")
+                request1.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                var body1 = [String: Any]()
+                body1["model"] = ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel
+                body1["voice"] = ChatVCDefaultSetManager.shared.chatAudioVoiceType
+                guard let jsonData1 = try? JSONSerialization.data(withJSONObject: body1, options: []) else{return}
+                request1.httpBody = jsonData1
+                URLSession.shared.dataTask(with: request1) { data, response, error in
+                    guard let recievedData = data else{return}
+                    guard let recievedData_string = String(data: recievedData, encoding: .utf8) else{return}
+                    //print("Get AccessToken Result: \(recievedData_string)")
+                    if let jsonObject = (try? JSONSerialization.jsonObject(with: recievedData_string.data(using: .utf8) ?? Data())) as? [String: Any],
+                       let client_secret = jsonObject["client_secret"] as? [String: Any],
+                       let client_secret_value = client_secret["value"] as? String{
+                         //Connect WebSockt with Access Token
+                        //print("Connect OpenAI With AccessToken: \(client_secret_value)")
+                        var request2 = URLRequest(url: URL(string: "wss://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
+                        request2.addValue("Bearer \(client_secret_value)", forHTTPHeaderField: "Authorization")
+                        request2.addValue("realtime=v1", forHTTPHeaderField: "OpenAI-Beta")
+                        self.socket = WebSocket(request: request2)
+                        self.socket.delegate = self
+                        self.socket.connect()
+                        self.connected_status = "connecting"
+                        DispatchQueue.main.async {
+                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WebSocketManager_connected_status_changed"), object: nil)
+                        }
+                    }
+                }.resume()
+            }
         }else if connected_status == "connecting"{
             //print("Connecting to OpenAI, please do not click")
         }else if connected_status == "connected"{
