@@ -20,11 +20,7 @@
 		A92C2D742D5DC2BE00623B9A /* ChatTableViewQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D712D5DC2BE00623B9A /* ChatTableViewQuestionCell.swift */; };
 		A92C2D772D5DC2E200623B9A /* ChatTableViewAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92C2D762D5DC2E200623B9A /* ChatTableViewAnswerCell.xib */; };
 		A92C2D782D5DC2E200623B9A /* ChatTableViewAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D752D5DC2E200623B9A /* ChatTableViewAnswerCell.swift */; };
-		A92C2D7D2D5DDE5800623B9A /* AudioChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */; };
 		A96085AD2D758B2E00FC616A /* AlertAudioChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */; };
-		A96085B32D758EEE00FC616A /* ChatBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96085B22D758EEE00FC616A /* ChatBotViewController.swift */; };
-		A96085B62D75926300FC616A /* audio_chat_goPause.png in Resources */ = {isa = PBXBuildFile; fileRef = A96085B42D75926300FC616A /* audio_chat_goPause.png */; };
-		A96085B72D75926300FC616A /* audio_chat_goPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = A96085B52D75926300FC616A /* audio_chat_goPlay.png */; };
 		A97799942D63157200F8C9C0 /* ChatViewController_sendText.png in Resources */ = {isa = PBXBuildFile; fileRef = A97799932D63157200F8C9C0 /* ChatViewController_sendText.png */; };
 		A97799952D63157200F8C9C0 /* chat_question_right.png in Resources */ = {isa = PBXBuildFile; fileRef = A97799902D63157200F8C9C0 /* chat_question_right.png */; };
 		A97799962D63157200F8C9C0 /* chat_bot_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A977998F2D63157200F8C9C0 /* chat_bot_avatar.png */; };
@@ -38,6 +34,8 @@
 		A9A844C62D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844BF2D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift */; };
 		A9A844C72D5C2BEC0026855D /* MaciroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844BD2D5C2BEC0026855D /* MaciroDefine.swift */; };
 		A9A844C82D5C2BEC0026855D /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A844C32D5C2BEC0026855D /* WebSocketManager.swift */; };
+		A9CFF8762D8D040F00CBC8CA /* audio_chat_goPause.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CFF8752D8D040F00CBC8CA /* audio_chat_goPause.png */; };
+		A9CFF8782D8D045E00CBC8CA /* audio_chat_goPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CFF8772D8D045E00CBC8CA /* audio_chat_goPlay.png */; };
 		A9F995092D64768D0031792E /* Audio_Chat_Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F995082D64768D0031792E /* Audio_Chat_Stop.png */; };
 		A9F9950A2D64768D0031792E /* Audio_Chat_Play.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F995072D64768D0031792E /* Audio_Chat_Play.png */; };
 		CA0968636E6BEF9174F2082B /* Pods_AIChatBotiOSSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F30EF2305C72B3375343405 /* Pods_AIChatBotiOSSDK_Tests.framework */; };
@@ -234,11 +232,7 @@
 		A92C2D722D5DC2BE00623B9A /* ChatTableViewQuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewQuestionCell.xib; sourceTree = "<group>"; };
 		A92C2D752D5DC2E200623B9A /* ChatTableViewAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewAnswerCell.swift; sourceTree = "<group>"; };
 		A92C2D762D5DC2E200623B9A /* ChatTableViewAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewAnswerCell.xib; sourceTree = "<group>"; };
-		A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioChatViewController.swift; sourceTree = "<group>"; };
 		A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAudioChatViewController.swift; sourceTree = "<group>"; };
-		A96085B22D758EEE00FC616A /* ChatBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotViewController.swift; sourceTree = "<group>"; };
-		A96085B42D75926300FC616A /* audio_chat_goPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_chat_goPause.png; sourceTree = "<group>"; };
-		A96085B52D75926300FC616A /* audio_chat_goPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_chat_goPlay.png; sourceTree = "<group>"; };
 		A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIChatBotiOSSDK_Back.png; sourceTree = "<group>"; };
 		A977998D2D63157200F8C9C0 /* AIChatBotiOSSDK_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AIChatBotiOSSDK_LOGO.png; sourceTree = "<group>"; };
 		A977998E2D63157200F8C9C0 /* chat_answer_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_answer_left.png; sourceTree = "<group>"; };
@@ -253,6 +247,8 @@
 		A9A844BF2D5C2BEC0026855D /* PlayAudioCotinuouslyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioCotinuouslyManager.swift; sourceTree = "<group>"; };
 		A9A844C12D5C2BEC0026855D /* RecordAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioManager.swift; sourceTree = "<group>"; };
 		A9A844C32D5C2BEC0026855D /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		A9CFF8752D8D040F00CBC8CA /* audio_chat_goPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_chat_goPause.png; sourceTree = "<group>"; };
+		A9CFF8772D8D045E00CBC8CA /* audio_chat_goPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio_chat_goPlay.png; sourceTree = "<group>"; };
 		A9F995072D64768D0031792E /* Audio_Chat_Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audio_Chat_Play.png; sourceTree = "<group>"; };
 		A9F995082D64768D0031792E /* Audio_Chat_Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audio_Chat_Stop.png; sourceTree = "<group>"; };
 		C6049EFD1F409DE24A00843D /* AIChatBotiOSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AIChatBotiOSSDK.podspec; path = ../AIChatBotiOSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -404,7 +400,6 @@
 			isa = PBXGroup;
 			children = (
 				A92C2D682D5D837E00623B9A /* ChatViewController.swift */,
-				A96085B22D758EEE00FC616A /* ChatBotViewController.swift */,
 				A92C2D712D5DC2BE00623B9A /* ChatTableViewQuestionCell.swift */,
 				A92C2D722D5DC2BE00623B9A /* ChatTableViewQuestionCell.xib */,
 				A92C2D752D5DC2E200623B9A /* ChatTableViewAnswerCell.swift */,
@@ -416,8 +411,7 @@
 		A92C2D792D5DDE0C00623B9A /* AudioViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A96085AE2D758E8700FC616A /* NormalAudioChat */,
-				A96085922D758A9400FC616A /* AlertAudioChat */,
+				A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */,
 				A97BEC522D5F129D00A6A37B /* AudioVlonumCustomView.swift */,
 			);
 			path = AudioViewController;
@@ -426,8 +420,7 @@
 		A93806692D76AB0E00AB0733 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A96085B42D75926300FC616A /* audio_chat_goPause.png */,
-				A96085B52D75926300FC616A /* audio_chat_goPlay.png */,
+				A9CFF8752D8D040F00CBC8CA /* audio_chat_goPause.png */,
 				A9F995072D64768D0031792E /* Audio_Chat_Play.png */,
 				A9F995082D64768D0031792E /* Audio_Chat_Stop.png */,
 				A977998C2D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png */,
@@ -438,24 +431,9 @@
 				A97799912D63157200F8C9C0 /* chat_user_avatar.png */,
 				A97799922D63157200F8C9C0 /* ChatViewController_micphone.png */,
 				A97799932D63157200F8C9C0 /* ChatViewController_sendText.png */,
+				A9CFF8772D8D045E00CBC8CA /* audio_chat_goPlay.png */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		A96085922D758A9400FC616A /* AlertAudioChat */ = {
-			isa = PBXGroup;
-			children = (
-				A96085AC2D758B2E00FC616A /* AlertAudioChatViewController.swift */,
-			);
-			path = AlertAudioChat;
-			sourceTree = "<group>";
-		};
-		A96085AE2D758E8700FC616A /* NormalAudioChat */ = {
-			isa = PBXGroup;
-			children = (
-				A92C2D7C2D5DDE5800623B9A /* AudioChatViewController.swift */,
-			);
-			path = NormalAudioChat;
 			sourceTree = "<group>";
 		};
 		A977998B2D6314E000F8C9C0 /* Resources */ = {
@@ -795,8 +773,6 @@
 				A97799962D63157200F8C9C0 /* chat_bot_avatar.png in Resources */,
 				A97799972D63157200F8C9C0 /* chat_answer_left.png in Resources */,
 				A97799982D63157200F8C9C0 /* AIChatBotiOSSDK_Back.png in Resources */,
-				A96085B62D75926300FC616A /* audio_chat_goPause.png in Resources */,
-				A96085B72D75926300FC616A /* audio_chat_goPlay.png in Resources */,
 				A97799992D63157200F8C9C0 /* chat_user_avatar.png in Resources */,
 				A9F995092D64768D0031792E /* Audio_Chat_Stop.png in Resources */,
 				A9F9950A2D64768D0031792E /* Audio_Chat_Play.png in Resources */,
@@ -804,7 +780,9 @@
 				A977999B2D63157200F8C9C0 /* ChatViewController_micphone.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				A92C2D732D5DC2BE00623B9A /* ChatTableViewQuestionCell.xib in Resources */,
+				A9CFF8762D8D040F00CBC8CA /* audio_chat_goPause.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				A9CFF8782D8D045E00CBC8CA /* audio_chat_goPlay.png in Resources */,
 				A92C2D772D5DC2E200623B9A /* ChatTableViewAnswerCell.xib in Resources */,
 				A92C2D6F2D5D8C1B00623B9A /* TestRootViewController.xib in Resources */,
 			);
@@ -928,7 +906,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96085AD2D758B2E00FC616A /* AlertAudioChatViewController.swift in Sources */,
-				A92C2D7D2D5DDE5800623B9A /* AudioChatViewController.swift in Sources */,
 				A92C2D742D5DC2BE00623B9A /* ChatTableViewQuestionCell.swift in Sources */,
 				A97BEC532D5F129D00A6A37B /* AudioVlonumCustomView.swift in Sources */,
 				A902487C2D719816009DBAB2 /* WebRTCManager.swift in Sources */,
@@ -939,7 +916,6 @@
 				A92C2D6B2D5D842800623B9A /* ChatVCDefaultSetManager.swift in Sources */,
 				A92C2D702D5D8C1B00623B9A /* TestRootViewController.swift in Sources */,
 				A9A844C82D5C2BEC0026855D /* WebSocketManager.swift in Sources */,
-				A96085B32D758EEE00FC616A /* ChatBotViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A92C2D782D5DC2E200623B9A /* ChatTableViewAnswerCell.swift in Sources */,
 			);

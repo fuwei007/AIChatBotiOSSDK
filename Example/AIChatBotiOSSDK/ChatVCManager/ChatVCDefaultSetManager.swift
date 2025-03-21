@@ -39,7 +39,6 @@ public class ChatVCDefaultSetManager: NSObject{
   
     //MARK:3.Show Chat View
     public var currentChatVC: ChatViewController!
-    //public var currentChatVC: ChatBotViewController!
     public func showChatVC(fromVC: UIViewController){
         
         if your_openAI_AccessToken.count == 0 && your_openAI_Appkey.count == 0{

@@ -27,6 +27,7 @@ public class ChatViewController: UIViewController, UITableViewDelegate, UITableV
         
         return view
     }()
+    
     lazy var openAI_connect_status_button: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("not connect", for: .normal)
@@ -293,17 +294,15 @@ public class ChatViewController: UIViewController, UITableViewDelegate, UITableV
         }
         chatTextView.resignFirstResponder()
         
-        /*
-        let audioVC = AudioChatViewController()
-        let nc = UINavigationController(rootViewController: audioVC)
-        nc.modalPresentationStyle = .fullScreen
-        present(nc, animated: true)
-         */
-        
         let audioVC = AlertAudioChatViewController()
+        audioVC.clickBackBlock = {
+            self.inputChatView.isHidden = false
+        }
         let nc = UINavigationController(rootViewController: audioVC)
         nc.modalPresentationStyle = .overCurrentContext
+        self.inputChatView.isHidden = true
         present(nc, animated: true)
+        
         
     }
     //MARK: Send Text Message

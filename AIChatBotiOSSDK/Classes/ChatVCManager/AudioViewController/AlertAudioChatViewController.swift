@@ -4,14 +4,29 @@ import AVFoundation
 
 class AlertAudioChatViewController: UIViewController {
     
+    var clickBackBlock: (()->())?
+    
     lazy var navigationView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: kStatusBarHeight, width: kScreen_WIDTH-32, height: 44))
         view.backgroundColor = .clear
+        if  ChatVCDefaultSetManager.shared.isShowLogo == true
+            &&  ChatVCDefaultSetManager.shared.logoImage != nil{
+            let imageView = UIImageView(frame: CGRect(x: (kScreen_WIDTH-32)/2-20, y: 44/2-17/2, width: 40, height: 17))
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = ChatVCDefaultSetManager.shared.logoImage
+            view.addSubview(imageView)
+        }
+        let backButton = EnlargedButton(type: .custom)
+        backButton.frame = CGRect(x: 0, y: 44/2-18/2, width: 18, height: 18)
+        backButton.setImage(UIImage(named: "AIChatBotiOSSDK_Back", in: Bundle(for: AlertAudioChatViewController.self), with: nil), for: .normal)
+        backButton.imageView?.contentMode = .scaleAspectFit
+        backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
+        view.addSubview(backButton)
         return view
     }()
 
+
     var audioStatus = "playing"//playing paused
-    
     lazy var playOrPauseButton = {
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: kScreen_WIDTH/2-48/2+50, y: kScreen_HEIGHT-safeBottom()-48-100, width: 48, height: 48)
@@ -28,6 +43,7 @@ class AlertAudioChatViewController: UIViewController {
         return button
     }()
     
+
     var volumeView: AudioVlonumCustomView!
     
     override func viewDidLoad() {
@@ -35,7 +51,7 @@ class AlertAudioChatViewController: UIViewController {
         initUI()
     }
     func initUI(){
-        view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.3)
+        view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
         
         navigationItem.titleView = navigationView
         
@@ -119,6 +135,7 @@ class AlertAudioChatViewController: UIViewController {
             audioPeadkerChangeTimer = nil
         }
         dismiss(animated: true)
+        clickBackBlock?()
     }
     
     var audioRecorder: AVAudioRecorder?
@@ -183,7 +200,7 @@ class AlertAudioChatViewController: UIViewController {
                 }
             }
         })
-        RunLoop.current.add(self.audioPeadkerChangeTimer!, forMode: RunLoopMode.commonModes)
+        RunLoop.current.add(self.audioPeadkerChangeTimer!, forMode: .common)
     }
     func normalize(value: Double, min: Double = -40, max: Double = 0) -> Double {
         return (value - min) / (max - min)

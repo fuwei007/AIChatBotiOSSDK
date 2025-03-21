@@ -46,7 +46,7 @@ class WebSocketManager: NSObject, WebSocketDelegate{
                        let client_secret = jsonObject["client_secret"] as? [String: Any],
                        let client_secret_value = client_secret["value"] as? String{
                          //Connect WebSockt with Access Token
-                        //print("Connect OpenAI With AccessToken: \(client_secret_value)")
+                        print("Connect OpenAI With AccessToken: \(client_secret_value)")
                         var request2 = URLRequest(url: URL(string: "wss://api.openai.com/v1/realtime?model=\(ChatVCDefaultSetManager.shared.RealtimeAPIGPTModel)")!)
                         request2.addValue("Bearer \(client_secret_value)", forHTTPHeaderField: "Authorization")
                         request2.addValue("realtime=v1", forHTTPHeaderField: "OpenAI-Beta")
